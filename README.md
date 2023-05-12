@@ -4,14 +4,27 @@ some blahblah
 
 ## How to run this site locally
 
-In a conda env, install the relevant packages:
+1. Clone this repository
 
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    git clone git@github.com:nobias-fht/advanced-scripting.git
+    ```
 
-Then generate the site:
+2. In a conda env, install the relevant packages:
 
-```bash
-mkdocs serve
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Install the commit pre-hooks
+
+    ```bash
+    pip install pre-commit
+    pre-commit install
+    ```
+
+4. Then generate the site:
+
+    ```bash
+    mkdocs serve
+    ```
