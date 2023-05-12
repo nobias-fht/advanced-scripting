@@ -36,7 +36,7 @@ counter = counter + 1;
 counter++;
 ```
 
-??? info "What does `counter++` do?"
+??? question "What does `counter++` do?"
     That's right, it does exactly the same as `counter = counter + 1`
 
 What happens when you use mathematical operations on strings?
