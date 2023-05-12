@@ -6,15 +6,26 @@ nav:
   - Installation:
       - course/installation/installing_fiji.md
       - course/installation/getting_started.md
-  - Refresher:
-      - course/refresher/index.md
-      - course/refresher/variables.md
-      - course/refresher/strings.md
-      - course/refresher/arrays.md
-      - course/refresher/loops.md
-      - course/refresher/conditionals.md
+  - Introduction:
+      - course/introduction/index.md
+      - course/introduction/variables.md
+      - course/introduction/strings.md
+      - course/introduction/arrays.md
+      - course/introduction/loops.md
+      - course/introduction/conditionals.md
+      - course/introduction/documenting.md
+  - Macro recorder:
+      - course/macro_recorder/index.md
+      - course/macro_recorder/recording.md
+      - course/macro_recorder/loading_images.md
+      - course/macro_recorder/splitting_channels.md
+      - course/macro_recorder/thresholding.md
   - Advanced Macro:
       - course/advanced_scripting/index.md
+      - course/advanced_scripting/functions.md
+      - course/advanced_scripting/understanding_parameters.md
+      - course/advanced_scripting/error_messages.md
+      - course/advanced_scripting/user_interaction.md
   - Pipelines:
       - course/pipelines/index.md
   - demo.md
