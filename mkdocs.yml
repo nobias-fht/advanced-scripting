@@ -1,0 +1,129 @@
+site_name: nobias advanced scripting
+
+nav:
+  - Home:
+      - index.md
+      - Advanced Macro:
+          - advanced_scripting/index.md
+      - Installation:
+          - installation/installing_fiji.md
+          - installation/getting_started.md
+      - Refresher:
+          - refresher/index.md
+          - refresher/variables.md
+          - refresher/strings.md
+          - refresher/arrays.md
+          - refresher/loops.md
+          - refresher/conditionals.md
+
+theme:
+  name: material
+  font: false
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  custom_dir: docs/.overrides
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: indigo
+      toggle:
+        icon: octicons/moon-24
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: amber
+      toggle:
+        icon: octicons/sun-24
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    # - navigation.footer  # next/previous links in footer
+    - navigation.content_next # next/previous links bottom of content
+    # - navigation.instant  # hard to use with javascript on page load
+    # - navigation.tracking
+    - navigation.indexes
+    - search.highlight
+    - search.share
+    - search.suggest
+    - navigation.icons
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.tilde
+  - pymdownx.snippets
+  - pymdownx.superfences
+  #- pymdownx.progressbar:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: "#"
+
+plugins:
+  # potentially we could use this: https://github.com/jdoiro3/mkdocs-multirepo-plugin
+  - search
+
+  # last modified date
+  #- git-revision-date-localized:
+  #    enable_creation_date: true
+  #    type: timeago
+
+  # add committer info
+  - git-committers:
+      repository: nobias-fht/advanced-scripting
+      branch: main
+      token: !ENV MKDOCS_GIT_COMMITTERS_APIKEY
+
+  # minify files
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      cache_safe: true
+      htmlmin_opts:
+        remove_comments: true
+      css_files:
+        - stylesheets/extra.css
+        - stylesheets/termynal.css
+      js_files:
+        - javascripts/extra.js
+        - javascripts/termynal.js
+
+  # check spelling in all files, including code documentation
+  - spellcheck:
+      backends: # the backends you want to use
+        - codespell: # or nested configs
+            dictionaries: [clear, rare]
+
+watch:
+  - docs
+
+extra_css:
+  - stylesheets/termynal.css
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/termynal.js
+  - javascripts/extra.js

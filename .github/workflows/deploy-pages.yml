@@ -1,0 +1,56 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Allow this job to clone the repo and create a page deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ✅ Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # needed for git committers
+
+      - name: 🐍 Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: 🔗 Check Links
+        run: |
+          npm install markdown-link-check@"<3.11.1"
+          npx markdown-link-check docs/**/*.md --progress -q
+
+      - name: 📚 Build Docs
+        run: |
+          pip install -U pip
+          pip install -r requirements.txt
+          mkdocs build --strict
+        env:
+          MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
+          GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
+
+      - name: ⬆️ Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: "site/"
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 🚀 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

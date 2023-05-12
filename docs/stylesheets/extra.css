@@ -1,0 +1,439 @@
+:root>* {
+  /* Code color shades */
+  /* --md-code-fg-color: #abb2bf; */
+  /* --md-code-bg-color: #282c34; */
+  --md-code-border-radius: 8px;
+  --nav-size: 0.72rem;
+  --link-out-svg: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0yMiAzaDd2N20tMS41LTUuNUwyMCAxMm0tMy03SDhhMyAzIDAgMCAwLTMgM3YxNmEzIDMgMCAwIDAgMyAzaDE2YTMgMyAwIDAgMCAzLTN2LTkiLz48L3N2Zz4=");
+}
+
+.linenodiv a {
+  color: var(--md-typeset-a-color);
+}
+
+.md-nav--secondary label.md-nav__title {
+  /* text-transform: uppercase; */
+  margin-bottom: 10px;
+}
+
+img.front-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+
+/* -------------- Header ----------------- */
+
+/* transparent header */
+.md-header {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+.md-header--shadow {
+  box-shadow: none;
+}
+
+/* bigger font and logo */
+nav.md-header__inner {
+  min-height: 68px;
+}
+
+.md-header__button.md-logo img {
+  height: 1.6rem;
+  margin-top: 2px;
+}
+
+[dir="ltr"] .md-header__title {
+  margin-left: 0.3rem;
+}
+
+.md-header__title {
+  font-size: 1.4rem;
+}
+
+/* hide the forks icon */
+.md-source {
+  transition: none;
+}
+
+.md-source__fact--forks {
+  display: none;
+}
+
+.md-source__repository {
+  overflow: inherit;
+}
+
+/* search bar */
+.md-search__form {
+  border-radius: 99px;
+  background-color: transparent;
+  border: 0.5px solid var(--md-default-fg-color--lighter);
+}
+
+.md-search__input::placeholder {
+  color: var(--md-default-fg-color--light);
+}
+
+.md-search__inner .md-search__icon {
+  color: var(--md-default-fg-color--lighter);
+}
+
+/* -------------- Breadcrumbs ----------------- */
+
+.md-typeset ul.breadcrumbs {
+  padding: 0;
+  margin: 0 0 0.4rem 0.2rem;
+  list-style: none;
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--lighter) !important;
+}
+
+.md-typeset ul.breadcrumbs li {
+  display: inline-block;
+  margin-left: 0rem;
+}
+
+.md-typeset ul.breadcrumbs li::after {
+  content: "\203A";
+  /* › */
+  margin: 0.8rem;
+}
+
+.md-typeset ul.breadcrumbs li:last-child::after {
+  content: "";
+  margin-left: 0;
+}
+
+/* ---------------- Typography ------------ */
+
+.md-typeset {
+  font-size: 0.84rem;
+}
+
+
+.md-header__topic {
+  font-family: "Share Tech Mono";
+}
+
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.md-typeset h2 {
+  font-size: 2rem;
+  margin: 1em 0 0.64em;
+}
+
+.md-typeset h3 {
+  font-size: 1.5rem;
+  margin: 1em 0 0.8em;
+}
+
+.md-typeset h4 {
+  font-size: 1.3rem;
+}
+
+.md-typeset h5 {
+  font-size: 1rem;
+}
+
+.md-typeset p {
+  line-height: 1.65em;
+}
+
+.md-typeset p code {
+  --border-radius: 3px;
+  --padding-block: 0.2em;
+  --padding-inline: 0.33em;
+  background-color: var(--md-code-bg-color);
+  padding: var(--padding-block) var(--padding-inline);
+  margin: calc(var(--padding-block) * -1) -0.125em;
+}
+
+dt {
+  font-weight: 800;
+  font-size: 1.1em;
+}
+
+/* Code Block Rounded Corners */
+
+.md-typeset pre>code {
+  border-radius: var(--md-code-border-radius);
+}
+
+table.highlighttable .linenos {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: var(--md-code-border-radius);
+}
+
+table.highlighttable tr:nth-child(1) .linenos {
+  border-top-left-radius: var(--md-code-border-radius);
+}
+
+table.highlighttable tr:nth-child(2) pre>code {
+  border-top-right-radius: 0;
+}
+
+.highlight span.filename {
+  border-top-right-radius: var(--md-code-border-radius);
+  border-top-left-radius: var(--md-code-border-radius);
+}
+
+/* Code block annotations */
+
+.md-annotation__index [data-md-annotation-id]:before {
+  vertical-align: -0.05em;
+}
+
+/* keep keys centered vertically */
+kbd.key-control {
+  align-self: center;
+  font-size: 0.65em;
+  color: var(--md-default-fg-color--light);
+}
+
+/* hide on small screens */
+@media screen and (max-width: 44.9375em) {
+  kbd.key-control {
+    display: none
+  }
+}
+
+/* --------------- Left-nav sidebar --------------- */
+
+@media screen and (min-width: 76.25em) {
+
+  /* hide the `pydev-guide` title at the top of the nav */
+  .md-nav--primary .md-nav__title {
+    display: none;
+  }
+
+  .md-sidebar--primary {
+    padding: 0.7rem 0;
+  }
+}
+
+.md-nav {
+  font-size: var(--nav-size);
+}
+
+.md-nav__item--active.md-nav__item--nested nav.md-nav {
+  border-left: 0.5px solid var(--md-default-fg-color--lighter);
+  margin-left: 0.1rem;
+}
+
+.md-nav__link {
+  align-items: flex-start;
+  justify-content: left;
+  display: flex;
+  margin-top: 0.625em;
+  scroll-snap-align: start;
+  transition: color 125ms;
+}
+
+.md-nav__link svg {
+  fill: currentcolor;
+  flex-shrink: 0;
+  height: 1.3em;
+  align-self: center;
+}
+
+[dir="ltr"] .md-nav__link svg+* {
+  margin-left: 0.4rem;
+}
+
+[dir="rtl"] .md-nav__link svg+* {
+  margin-right: 0.4rem;
+}
+
+/* --------------- Right-nav sidebar --------------- */
+
+/* highlighting */
+
+nav.md-nav--secondary label.md-nav__title {
+  color: var(--md-default-fg-color);
+  font-weight: 800;
+}
+
+nav.md-nav--secondary>ul>li.md-nav__item {
+  border-left: 3px solid;
+  border-left-color: var(--md-default-fg-color--lightest);
+}
+
+nav.md-nav--secondary>ul>li.md-nav__item:hover {
+  border-left-color: var(--md-default-fg-color--lighter);
+}
+
+/* highlight active item */
+nav.md-nav--secondary li.md-nav__item:has(> a.md-nav__link--active) {
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+nav.md-nav--secondary>ul>li.md-nav__item .md-nav__link {
+  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+}
+
+/* Hide edit this page icon, because we put it on the right nav */
+.md-content__button.md-icon[title="Edit this page"] {
+  display: none;
+}
+
+/* --------------- Footer ------------------- */
+
+.metadata {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  color: var(--md-default-fg-color--lighter);
+  font-size: 0.9em;
+}
+
+.metadata.page-metadata {
+  padding: 1.2rem 2rem 0.6rem;
+  border-top: 2px solid var(--md-default-fg-color--lightest);
+}
+
+.metadata.page-metadata .contributors-text {
+  margin-right: 5px;
+}
+
+body[dir="rtl"] .metadata.page-metadata .contributors-text {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.page-metadata .contributors {
+  display: inline-block;
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page-metadata .contributors li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.page-metadata .contributors li img {
+  border-radius: 100%;
+  height: 2.6rem;
+  width: 2.6rem;
+  padding: 0.22em 0.2em 0.2em;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* prev/next links */
+
+.md-typeset .md-footer__link {
+  color: var(--md-default-fg-color--light);
+}
+
+
+
+/* --------------- ProgressBar ------------------- */
+
+.progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+  margin: 0;
+  line-height: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  color: var(--md-code-fg-color);
+}
+
+.progress {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  height: 1.2rem;
+  background-color: var(--md-code-bg-color);
+  position: relative;
+}
+
+.progress-bar {
+  height: 1.2rem;
+  float: left;
+  background-color: var(--md-accent-fg-color);
+}
+
+.progress.thin {
+  margin-top: 0.9rem;
+  height: 0.4rem;
+}
+
+.progress.thin .progress-label {
+  margin-top: -0.4rem;
+}
+
+.progress.thin .progress-bar {
+  height: 0.4rem;
+}
+
+.md-typeset .progress.candystripe .progress-bar {
+  background-image: linear-gradient(135deg,
+      var(--md-primary-fg-color--light) 27%,
+      transparent 27%,
+      transparent 52%,
+      var(--md-primary-fg-color--light) 52%,
+      var(--md-primary-fg-color--light) 77%,
+      transparent 77%,
+      transparent);
+  background-size: 2rem 2rem;
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 6rem 0;
+  }
+}
+
+.md-typeset .candystripe-animate .progress-bar {
+  animation: animate-stripes 3s linear infinite;
+}
+
+.md-content .md-typeset a[href*="//"]:not([href*="mywebsite.co.uk"])::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.15em;
+  margin-bottom: 0.3em;
+  vertical-align: middle;
+  width: 0.7em;
+  height: 1em;
+  -webkit-mask-image: var(--link-out-svg);
+  mask-image: var(--link-out-svg);
+  -webkit-mask-size: 0.7em 1em;
+  mask-size: 0.7em 1em;
+  background-color: var(--md-typeset-a-color);
+}
+
+.md-content .md-typeset a[href*="//"]:not([href*="mywebsite.co.uk"]):hover::after {
+  background-color: var(--md-accent-fg-color);
+}
