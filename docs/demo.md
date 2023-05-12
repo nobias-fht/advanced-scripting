@@ -38,5 +38,17 @@ plt.show()
     }
     ```
 
+<!---
+See Admonitions:
+https://squidfunk.github.io/mkdocs-material/reference/admonitions/#type:question
+---->
 ??? info "Click to expand"
+    `???` makes for collapsible content
+??? warning "Click to expand"
+    `???` makes for collapsible content
+??? example "Click to expand"
+    `???` makes for collapsible content
+??? question "Click to expand"
+    `???` makes for collapsible content
+??? danger "Click to expand"
     `???` makes for collapsible content

@@ -28,7 +28,7 @@ jobs:
       - name: 🔗 Check Links
         run: |
           npm install markdown-link-check@"<3.11.1"
-          npx markdown-link-check docs/**/*.md --progress -q
+          npx markdown-link-check docs/**/*/*.md --progress -q
 
       - name: 📚 Build Docs
         run: |
