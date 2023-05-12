@@ -3,18 +3,19 @@ site_name: nobias advanced scripting
 nav:
   - Home:
       - index.md
-      - Advanced Macro:
-          - advanced_scripting/index.md
-      - Installation:
-          - installation/installing_fiji.md
-          - installation/getting_started.md
-      - Refresher:
-          - refresher/index.md
-          - refresher/variables.md
-          - refresher/strings.md
-          - refresher/arrays.md
-          - refresher/loops.md
-          - refresher/conditionals.md
+  - Installation:
+      - course/installation/installing_fiji.md
+      - course/installation/getting_started.md
+  - Refresher:
+      - course/refresher/index.md
+      - course/refresher/variables.md
+      - course/refresher/strings.md
+      - course/refresher/arrays.md
+      - course/refresher/loops.md
+      - course/refresher/conditionals.md
+  - Advanced Macro:
+      - course/advanced_scripting/index.md
+  - demo.md
 
 theme:
   name: material
@@ -42,7 +43,7 @@ theme:
         name: Switch to light mode
 
   features:
-    - navigation.tabs
+    #- navigation.tabs
     - content.code.copy
     - content.code.annotate
     - content.action.edit
