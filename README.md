@@ -7,7 +7,7 @@ some blahblah
 1. Clone this repository
 
     ```bash
-    git clone git@github.com:nobias-fht/advanced-scripting.git
+    git clone https://github.com/nobias-fht/advanced-scripting.git
     ```
 
 2. In a conda env, install the relevant packages:
