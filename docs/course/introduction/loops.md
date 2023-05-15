@@ -4,6 +4,8 @@
 
 Let's dive in!
 
+### For Loops
+
 ```java title="For Loops"
 
 for (i=0; i<10; i++) // (1)!
@@ -45,3 +47,35 @@ Try changing some of the values in the loop and see what happens.
 
 ??? question "What would happen if we used the same macro, but instead incremented by -1 instead of 1"
     Because the second condition `i < 10` will always be true, we will have created an inifinite loop (a loop that will never terminate). If you happen to do this, no problem, you can always just close and reopen Fiji and all will be well. Infinite loops should be avoided, but even the best programmers sometimes accidentally make one.
+
+
+### While loops
+
+Another type of loop is the `while` loop. The general form is the following:
+
+```java title="While Loops"
+
+while (condition)
+{
+    //do something
+}
+
+```
+
+This can be very useful to continue executing a block of code until a condition is met. For example, we could continue eroding a binary image until there are objects greated that 1000 pixels in size, for example.
+
+A simpler example would be the following:
+
+```java title="A simple while loop"
+
+num = 10
+while (num > 0)
+{
+print(num);
+num--; // (1)!
+}
+```
+
+1. This is the same as the num++ operator, just in reverse
+
+Here, we are going to reduce the value of `num` by 1 until it reaches 0 by contnuing the loop until the `while (num > 0)` check fails.

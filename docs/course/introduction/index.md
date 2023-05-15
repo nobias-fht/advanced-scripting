@@ -34,8 +34,18 @@ Lastly, we want to tell the computer "OK, we're done giving you instructions, yo
 !!! note "Don't Panic!"
     Don't worry about typing the wrong thing and making an error. The worst case-scenerio is that you will have to force your script to stop running. So don't be afraid of trying things and seeing what works (and what doesn't!). An important part of learning to program is learning from your mistakes!
 
+We can also just use this window as a simple calculator. For example, we can type mathematical operations, such as:
 
-Of couse, we want to do more with our programs than printing out cute messages. In the next section we will learn how we can store and manipulate infomation using `variables`.
+```java
+print(10 + 3);
+print(5 * 6);
+print(90 / 9);
+```
+
+This can be very useful -- practice a few yourself.
+
+
+Of couse, we want to do more with our programs than printing out cute messages and using it as a calculator. In the next section we will learn how we can store and manipulate infomation using `variables`.
 
 
 

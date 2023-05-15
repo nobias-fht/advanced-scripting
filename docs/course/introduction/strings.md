@@ -11,15 +11,31 @@ We can create a string in the same way we create any other variable, but picking
 
  ```java
  message = "This is a string";
- message = This is not a string
+ message = This is not a string;
  ```
 
+We can combine two strings using the `+` operator, for example:
+
+```java
+string1 = "This is "; // (1)!
+string2 = "a string";
+string3 = string1 + string2
+print(string3)
+
+```
+
+1. Remember that we need a space either at the end of the first string or at the beginning of the second string, or else the concatenation will be "This isa String"
+
+We can also include other variables in a string, for example:
+
+```java
+number = 42;
+string = "My favorite number is " + number;
+print(string);
+```
 
 
-- String creation
-- String concatenation
-- Including variables in a string
-- printing string
+
 - string indexing
 - upper case, lower case
 - string splitting
