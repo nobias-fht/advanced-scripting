@@ -46,7 +46,7 @@ Try changing some of the values in the loop and see what happens.
     ```
 
 ??? question "What would happen if we used the same macro, but instead incremented by -1 instead of 1"
-    Because the second condition `i < 10` will always be true, we will have created an inifinite loop (a loop that will never terminate). If you happen to do this, no problem, you can always just close and reopen Fiji and all will be well. Infinite loops should be avoided, but even the best programmers sometimes accidentally make one.
+    Because the second condition `i < 10` will always be true, we will have created an infinite loop (a loop that will never terminate). If you happen to do this, no problem, you can always just close and reopen Fiji and all will be well. Infinite loops should be avoided, but even the best programmers sometimes accidentally make one.
 
 
 ### While loops
@@ -62,7 +62,7 @@ while (condition)
 
 ```
 
-This can be very useful to continue executing a block of code until a condition is met. For example, we could continue eroding a binary image until there are objects greated that 1000 pixels in size, for example.
+This can be very useful to continue executing a block of code until a condition is met. For example, we could continue eroding a binary image until there are objects greater that 1000 pixels in size, for example.
 
 A simpler example would be the following:
 

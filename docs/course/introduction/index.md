@@ -45,7 +45,7 @@ print(90 / 9);
 This can be very useful -- practice a few yourself.
 
 
-Of couse, we want to do more with our programs than printing out cute messages and using it as a calculator. In the next section we will learn how we can store and manipulate infomation using `variables`.
+Of course, we want to do more with our programs than printing out cute messages and using it as a calculator. In the next section we will learn how we can store and manipulate information using `variables`.
 
 
 

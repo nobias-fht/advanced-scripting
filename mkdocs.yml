@@ -14,6 +14,7 @@ nav:
       - course/introduction/loops.md
       - course/introduction/conditionals.md
       - course/introduction/documenting.md
+      - course/introduction/functions.md
   - Macro recorder:
       - course/macro_recorder/index.md
       - course/macro_recorder/recording.md
@@ -28,6 +29,13 @@ nav:
       - course/advanced_scripting/user_interaction.md
   - Pipelines:
       - course/pipelines/index.md
+      - Looping through files:
+        - course/pipelines/looping_through_files/looping_through_files.md
+        - course/pipelines/looping_through_files/getting_file_list.md
+        - course/pipelines/looping_through_files/looping_through_list.md
+        - course/pipelines/looping_through_files/getting_list_length.md
+
+
   - demo.md
 
 theme:

@@ -1,6 +1,6 @@
 # Strings
 
- A `string` is a data type that can store any text you might want. We have already seen strings before, for example "Hello World", and we have stored strings as variables before, for instance when we stored the `string` "This is also a varibale" in the variable `message`:
+ A `string` is a data type that can store any text you might want. We have already seen strings before, for example "Hello World", and we have stored strings as variables before, for instance when we stored the `string` "This is also a variable" in the variable `message`:
  ```java
  message = "This is also a variable";
  ```
