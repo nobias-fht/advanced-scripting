@@ -34,7 +34,11 @@ nav:
         - course/pipelines/looping_through_files/getting_file_list.md
         - course/pipelines/looping_through_files/looping_through_list.md
         - course/pipelines/looping_through_files/getting_list_length.md
-
+        - course/pipelines/looping_through_files/opening_files.md
+        - course/pipelines/looping_through_files/operating_on_open_files.md
+        - course/pipelines/looping_through_files/saving_and_closing_files.md
+        - course/pipelines/looping_through_files/summary.md
+        - course/pipelines/looping_through_files/simple_gui.md
 
   - demo.md
 
