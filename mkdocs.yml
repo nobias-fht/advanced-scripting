@@ -9,8 +9,8 @@ nav:
   - Introduction:
       - course/introduction/index.md
       - course/introduction/variables.md
-      - course/introduction/strings.md
       - course/introduction/arrays.md
+      - course/introduction/strings.md
       - course/introduction/loops.md
       - course/introduction/conditionals.md
       - course/introduction/documenting.md

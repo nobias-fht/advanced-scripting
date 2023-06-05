@@ -34,10 +34,32 @@ string = "My favorite number is " + number;
 print(string);
 ```
 
+Strings can be split at various points. This is very useful for, as an example, removing file extensions (such as '.tif' from file names).
+
+If we had the following string: `myfile.tif` and wanted to get only the file name, we could `split` the string at the `.`.
+
+```javascript
+string = 'myfile.tif'
+split_string = split(string, '.')
+Array.print(splitstring)
+```
+
+The `split` function returns an array which contains the split strings. In this case, the array would contain the values `myfile` and `tif` (because we have chosen to split the string at the `.`)
+
+??? question "What would the output be if we changed the code to split the string at the character `l` istead of the `.`?"
+    [`myfi`, `e.tif`]
+
+??? question "Write code to remove the numeric value from the string `my_new_8463_file.tif`. Hint: the final value should look like `my_new_file.tif`"
+    ```javascript
+    string = 'my_new_8463_file.tif'
+    split_string = split(string, '_')
+    new_string = split_string[0] + '_' + split_string[1] + '_' + split_string[3]
+    print(new_string)
+    ```
+
 
 
 - string indexing
 - upper case, lower case
-- string splitting
 - searching in a string
 - substring
