@@ -46,7 +46,7 @@ Array.print(splitstring)
 
 The `split` function returns an array which contains the split strings. In this case, the array would contain the values `myfile` and `tif` (because we have chosen to split the string at the `.`)
 
-??? question "What would the output be if we changed the code to split the string at the character `l` istead of the `.`?"
+??? question "What would the output be if we changed the code to split the string at the character `l` instead of the `.`?"
     [`myfi`, `e.tif`]
 
 ??? question "Write code to remove the numeric value from the string `my_new_8463_file.tif`. Hint: the final value should look like `my_new_file.tif`"

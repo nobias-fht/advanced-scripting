@@ -1,6 +1,6 @@
 # Opening Files
 
-In this section we will start building our actual script piece-by-piece. The script we are currenly working on in any section will always appear like this:
+In this section we will start building our actual script piece-by-piece. The script we are currently working on in any section will always appear like this:
 
 
 !!! example "Our Script"

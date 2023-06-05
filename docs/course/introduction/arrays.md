@@ -65,7 +65,7 @@ For a two dimensional array (like an image), we need two coordinates, representi
         print(my_array[8])
     ```
 
-    1. While this is a perfectly valid way of initializing array, it would be inefficient if we wanted to initialize an array of, say, 100 values. Look at the ImageJ macro docs and try to understand what the funciton `Array.getSequence()` does.
+    1. While this is a perfectly valid way of initializing array, it would be inefficient if we wanted to initialize an array of, say, 100 values. Look at the ImageJ macro docs and try to understand what the function `Array.getSequence()` does.
 
 
 

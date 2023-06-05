@@ -1,6 +1,6 @@
 # Using the Array.length function
 
-How can we fix this problem? Woudln't it be great if we could ask Fiji how many files we have and just use that number? In this case, the number of files is exactly equivalent to the length of the list that cotains all our file names.
+How can we fix this problem? Woudln't it be great if we could ask Fiji how many files we have and just use that number? In this case, the number of files is exactly equivalent to the length of the list that contains all our file names.
 
 How do we get the length of the list? Each array in Fiji has a function attached to it called `length`, which returns the length of the list. We can get the length of the list by calling the function `length` on the list.
 
@@ -9,7 +9,7 @@ number_of_files = file_list.length; //(1)!
 print(number_of_files);
 ```
 
-1. Why this is not using the usual function syntax that we have seen before, like getListLength(file_list) is beyond the scope of this course. It is enough to understand that the syntax file_list.length returns the value of the length of the aray in the same way that a function like, say `getArrayLength(array)` would.
+1. Why this is not using the usual function syntax that we have seen before, like getListLength(file_list) is beyond the scope of this course. It is enough to understand that the syntax file_list.length returns the value of the length of the array in the same way that a function like, say `getArrayLength(array)` would.
 
 Now that we know the length of the list, we can use it to tell the loop when to stop.
 
