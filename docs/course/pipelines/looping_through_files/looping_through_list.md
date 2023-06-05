@@ -4,7 +4,7 @@ A list is similar to an array, in that it can be indexed. In fact, it is indexed
 
 Let's first check how we could access one file in this list.
 
-??? Question "Write code to print the fifth filename in side `file_list`"
+??? Question "Write code to print the fifth filename inside `file_list`"
     ```javascript
     print(file_list[4])
     ```

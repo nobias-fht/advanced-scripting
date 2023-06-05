@@ -30,7 +30,7 @@ nav:
   - Pipelines:
       - course/pipelines/index.md
       - Looping through files:
-        - course/pipelines/looping_through_files/looping_through_files.md
+        - course/pipelines/looping_through_files/introduction.md
         - course/pipelines/looping_through_files/getting_file_list.md
         - course/pipelines/looping_through_files/looping_through_list.md
         - course/pipelines/looping_through_files/getting_list_length.md
@@ -39,6 +39,9 @@ nav:
         - course/pipelines/looping_through_files/saving_and_closing_files.md
         - course/pipelines/looping_through_files/summary.md
         - course/pipelines/looping_through_files/simple_gui.md
+      - Simple Object Tracking:
+        - course/pipelines/simple_object_tracking/introduction.md
+        - course/pipelines/simple_object_tracking/navigating_image_stacks.md
 
   - demo.md
 

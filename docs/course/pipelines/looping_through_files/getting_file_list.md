@@ -10,7 +10,7 @@ file_list = getFileList(folder); //(1)!
 
 1. Functions are (usually!) clearly named. You can probably guess what this one does
 
-The syntax here should be familiar to you, but let's think about what we're doing here and refresh our memory. We're using a function, `getFileList`, and passing in the value of the folder in which we have our images stored (in this case, `XXX`). Under the hood, this function is going to look at this folder, and return a list of files that are contained within it. Once it generates this 'file list' and returns it to us. What should we do with this list? So that we can use it later in our script, we will store it in a variable, in this case called `file_list`.
+The syntax here should be familiar to you, but let's think about what we're doing here and refresh our memory. We're using a function, `getFileList`, and passing in the value of the folder in which we have our images stored (in this case, `XXX`, which we are storing in the variable `folder`). Under the hood, this function is going to look at this folder, and return a list of files that are contained within it. Once it generates this 'file list' and returns it to us. What should we do with this list? So that we can use it later in our script, we will store it in a variable, in this case called `file_list`.
 
 ??? tip "Variable Names"
     Remember that variable names should be clear and understandable. There was nothing stopping us from using the variable name `dz334ldkx` to store this file list, but we would have no idea later on in our code what that refers to. So, it's good practice to use names that are descriptive of what the variable is storing.
