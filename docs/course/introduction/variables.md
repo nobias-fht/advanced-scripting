@@ -1,31 +1,49 @@
+---
+tags:
+  - coding
+  - variables
+  - strings
+  - print
+---
 # Variables
 
+A variable is just a container that we can store a `value` in that has a
+specific `name`. The name can be anything we want, and so can the value. The
+`ImageJ Macro` language is very friendly: there is no need to specify what we
+want to store in a variable, we can just assign it a value. :white_check_mark:
 
-A variable is just a container that we can store a `value` in that has a specific `name`. The name can be anything we want, and so can the value (). The `ImageJ Macro` language is very friendly: there is no need to specify what we want to store in a variable, we can just assign it a value.
+## First variables
 
-HINT: in the examples below, you can click on the `+` icon and see hints and tips.
+!!!Note
+        In the examples below, you can click on the `+` icon and see hints and tips.
 
-```java title="Variables"
+Let's create some variables:
+
+```javascript title="Variables"
 
 // For example, we can store the value "42", under the name "number"
 number = 42; // (1)!
 
-// But a variable can also represent text (aka "string")
 // (2)!
+// But a variable can also represent text (aka "string")
 message = "This is also a variable";
 
 // Verify the value of a variable by printing to the console
 print(message);  // (3)!
 ```
 
-1. Never forget the semi-colon ";"!
-2. While we are here, this is how your add comments to your code!
-3. You should remember this piece of code from the previous exercise. However, instead of asking it to print "Hello World", we will be printing whatever is stored in the variable `message`!
+1. :warning: Never forget the semi-colon `;`!
+2. While we are here, `//` is how your add comments to your code! :party_popper:
+3. You should remember this piece of code from the previous exercise. However,
+instead of asking it to print "Hello World", we will be printing whatever is
+stored in the variable `message`!
 
-Keep in mind that the `name` and `value` of a variable do not have to match. We could easily write the following code:
+## Bad example
 
+Keep in mind that the `name` and `value` of a variable do not have to match. We
+could easily write the following code:
 
-```java title="Bad Variable Names"
+```javascript title="Bad Variable Names"
 
 number = "Hello world"
 dog = "Cat"
@@ -33,11 +51,15 @@ xyz_63193 = 42
 
 ```
 
-Why might we not want to do this?
+!!!Question
+        Why might we not want to do this? :shrug:
 
+## Changing a variable value
 
-We can change the value assigned to a variable name by assigning a new `value` to the same variable `name`:
-```java title="Variables"
+We can change the value assigned to a variable name by assigning a new `value`
+to the same variable `name`:
+
+```javascript title="Variables"
 
 message = "This is a message"
 print(message)
@@ -46,11 +68,12 @@ print(message)
 
 ```
 
-What happens when you run this code?
+!!!Question
+        What happens when you run this code?
 
 Once you have defined a variable, you can simply do math with it.
 
-```java title="Adding, multiplying variables"
+```javascript title="Adding, multiplying variables"
 number = 15.6;
 
 // Addition
@@ -70,4 +93,10 @@ counter++;
 ??? question "What does `counter++` do?"
     That's right, it does exactly the same as `counter = counter + 1`
 
-What happens when you use mathematical operations on strings? Try some and find out! What about if you try mathematical operations between strings and numbers?
+!!!Question
+        What happens when you use mathematical operations on strings? Try some
+        and find out! What about if you try mathematical operations between
+        strings and numbers?
+
+But, variables can be much more than a number or a sentence! It is time to
+discover arrays.

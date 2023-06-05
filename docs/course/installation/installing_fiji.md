@@ -1,16 +1,24 @@
+---
+tags:
+  - installation
+---
 # Installing Fiji
 
-=== "HT laptop"
+First thing first, let's install Fiji. :desert_island:
 
-    1. dsfd
-    2. sd
+=== "From the website"
 
-=== "Windows"
+    1. Visit Fiji's [download page](https://imagej.net/software/fiji/downloads)
+    2. Download the archive for your OS
+    3. Extract the content of the archive (`Fiji.app`)
+    4. Place `Fiji.app` in your `Applications` folder (macOS) or in
+    `C:\Users\[your name]\` (Windows)
 
-    1.
-    2.
+=== "HT macOS"
 
-=== "macOS/Linux"
+    1. Open `HT self Service` app
+    2. Search for `Fiji`
+    3. Click on `install`
 
-    1.
-    2.
+Now that we have Fiji installed, we are eager to start our first macro script.
+We will start by creating a new macro. :dizzy:

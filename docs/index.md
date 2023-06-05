@@ -1,22 +1,26 @@
+---
+tags:
+  - intro
+---
 # Advanced scripting with Fiji
 
 In this course, we introduce the fundamentals of scripting in Fiji. It is the
 support for a two-day course given at Human Technopole, the third day being
-focused on personal projects.
+focused on personal projects. :open_book:
 
 The course assumes familiarity with Fiji and no coding experience.
 
-## Course structure
-
 ### First day
 
-- Installation
-- Refresher (variables, arrays, loops, script, etc.)
-- Advanced macro (batch processing, simple UI etc.)
+- Warm welcome :sun:
+- Introduction to scripting :tropical_drink:
+- Advanced scripting :fire:
 
 ### Second day
 
-- Exploring pipelines
+- Building pipelines :rocket:
+
+Are you ready? Let's learn some stuff. :woman_climbing:
 
 !!!Note
     As with any programming language it is more important to understand the
