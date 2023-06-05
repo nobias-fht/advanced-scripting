@@ -9,11 +9,12 @@ nav:
   - Introduction:
       - course/introduction/index.md
       - course/introduction/variables.md
-      - course/introduction/strings.md
       - course/introduction/arrays.md
+      - course/introduction/strings.md
       - course/introduction/loops.md
       - course/introduction/conditionals.md
       - course/introduction/documenting.md
+      - course/introduction/functions.md
   - Macro recorder:
       - course/macro_recorder/index.md
       - course/macro_recorder/recording.md
@@ -28,6 +29,20 @@ nav:
       - course/advanced_scripting/user_interaction.md
   - Pipelines:
       - course/pipelines/index.md
+      - Looping through files:
+        - course/pipelines/looping_through_files/introduction.md
+        - course/pipelines/looping_through_files/getting_file_list.md
+        - course/pipelines/looping_through_files/looping_through_list.md
+        - course/pipelines/looping_through_files/getting_list_length.md
+        - course/pipelines/looping_through_files/opening_files.md
+        - course/pipelines/looping_through_files/operating_on_open_files.md
+        - course/pipelines/looping_through_files/saving_and_closing_files.md
+        - course/pipelines/looping_through_files/summary.md
+        - course/pipelines/looping_through_files/simple_gui.md
+      - Simple Object Tracking:
+        - course/pipelines/simple_object_tracking/introduction.md
+        - course/pipelines/simple_object_tracking/navigating_image_stacks.md
+
   - demo.md
 
 theme:
