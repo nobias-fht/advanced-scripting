@@ -21,7 +21,7 @@ Table.set("X_position", position, value);
 
 What should we use as `position`? Since we are always wanting to add values to the end of our table, we can use `Table.size` to get the last row of the table. This is a very similar strategy to what we saw in the previous sectoin when we use the `length` of a List to find out the number of elements that it contains.
 
-??? question modify your script so that, insread of printing the x and y coordiates to the log, it prints them to this custom results table, in the appropriate columns
+??? question modify your script so that, insread of printing the x and y coordinates to the log, it prints them to this custom results table, in the appropriate columns
    ```javascript
    macro "get_mouse_xy [g]" {
       getCursorLoc(x, y, z, modifiers)

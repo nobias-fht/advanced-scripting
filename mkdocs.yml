@@ -45,6 +45,7 @@ nav:
         - course/pipelines/simple_object_tracking/getting_mouse_xy_position.md
         - course/pipelines/simple_object_tracking/measure_position_over_time.md
         - course/pipelines/simple_object_tracking/writing_to_file.md
+        - course/pipelines/simple_object_tracking/append_file.md
 
 
 
