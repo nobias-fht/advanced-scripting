@@ -1,6 +1,11 @@
+<p align="center">
+    <img src="https://github.com/nobias-fht/.github/blob/main/images/banner_nobgd.png?raw=true">
+</p>
+
 # Welcome
 
-some blahblah
+Welcome to the advanced scripting with ImageJ macros from the NoBIAS facility of the Human Technopole. The website can 
+be found [here](https://nobias-fht.github.io/advanced-scripting/).
 
 ## How to run this site locally
 
