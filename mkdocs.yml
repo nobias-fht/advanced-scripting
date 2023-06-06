@@ -46,7 +46,10 @@ nav:
         - course/pipelines/simple_object_tracking/measure_position_over_time.md
         - course/pipelines/simple_object_tracking/writing_to_file.md
         - course/pipelines/simple_object_tracking/append_file.md
-
+      - Basic Segmentation:
+        - course/pipelines/basic_segmentation/introduction.md
+        - course/pipelines/basic_segmentation/multiple_image_windows.md
+        - course/pipelines/basic_segmentation/thresholding_an_image.md
 
 
   - demo.md

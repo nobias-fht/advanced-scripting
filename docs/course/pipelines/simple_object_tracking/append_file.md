@@ -42,14 +42,14 @@ Try opening our data in excel. You will have to tell excel that the file is deli
       	} else {
         getCursorLoc(x, y, z, modifiers);
         File.append(x + "," + y, file_name);
-        if (getSliceNumber + 1 < nSlices) { //(1)!
+        if (getSliceNumber + 1 < nSlices) {
             setSlice(getSliceNumber + 1); 
         }
       }
       }
     ```
 
-    1. Even if you didn't get to this answer, take a look at it and try to understand what's going on.
+    1. Even if you didn't get to this answer, take a look at it and try to understand what's going on. How are we finding out of the file is newly created?
 
 
 
