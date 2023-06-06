@@ -20,27 +20,12 @@ an array of words, for example:
 ["this", "is", "also", "an", "array"]
 ```
 
-Arrays are particularly important to us because images are just two-dimensional
-arrays of numbers. :exploding_head:
-
-For example, the following is a two-dimensional array, but we can also
-visualize it as an image, with the values mapping to intensity levels in the
-final image
-
-```javascript title="Image or array?"
-1 1 1 1 1 1 1 1
-1 1 1 1 1 1 1 1
-1 1 0 1 1 0 1 1
-1 1 1 1 1 1 1 1
-1 0 1 1 1 1 0 1
-1 1 0  0 0 0 1 1
-1 1 1 1 1 1 1 1
-1 1 1 1 1 1 1 1
-```
-
-You might be able to guess what this image is. :smile:
-
 ## Macro arrays
+
+!!!Warning
+    In the ImageJ macro language, arrays are only one-dimensional, which
+    means that we cannot represent images as arrays (as opposed to most
+    programming languages). :thumbs_down:
 
 Unfortunately, in ImageJ macro, we cannot simply initialize an array as we
 would with any other variable. Instead, to initialize an array in
@@ -54,9 +39,6 @@ my_array1 = newArray(10);
 my_string_array = newArray("element1", "element2", "element3");
 ```
 
-!!!Question
-        Try initializing some arrays of various types.
-
 ## Accessing values in the array
 
 We can `index` arrays to determine what values are in them. The simplest form
@@ -67,27 +49,12 @@ position, not at `1`. :fearful:
 To index, we use the following syntax:
 
 ```javascript title="Access array value"
-array[position]
+array[position];
 ```
 
 For example, if we wanted the first position of `my_string_array` we would type
 the following:
 
 ```javascript title="Get first member"
-print(my_string_array[0])
+print(my_string_array[0]);
 ```
-
-For a two dimensional array (like an image), we need two coordinates,
-representing the row and column of the pixel we would like to index. Remember,
-both of these are indexed from 0, starting from the top-left of the image.
-
-???Question "Make an array consisting of the numbers between zero and ten. Write code to print the second, fifth, and eighth values. What do you expect these values to be?"
-
-    ```javascript title="Print values from array"
-        my_array = newArray("0", "1", "2", "3", "4", "5", "6", "7", "8', "9", 10"); //(1)!
-        print(my_array[1])
-        print(my_array[5])
-        print(my_array[8])
-    ```
-
-    1. While this is a perfectly valid way of initializing array, it would be inefficient if we wanted to initialize an array of, say, 100 values. Look at the ImageJ macro docs and try to understand what the function `Array.getSequence()` does.

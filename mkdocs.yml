@@ -8,7 +8,6 @@ nav:
   - Introduction:
       - course/introduction/index.md
       - course/introduction/print.md
-      - course/introduction/print_exercises.md
       - course/introduction/variables.md
       - course/introduction/variables_exercises.md
       - course/introduction/arrays.md
@@ -18,6 +17,7 @@ nav:
       - course/introduction/loops.md
       - course/introduction/loops_exercises.md
       - course/introduction/conditionals.md
+      - course/introduction/conditionals_exercises.md
       - course/introduction/documenting.md
       - course/introduction/functions.md
       - course/introduction/treasure_hunt.md

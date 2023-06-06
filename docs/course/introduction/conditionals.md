@@ -1,73 +1,57 @@
+---
+tags:
+  - coding
+  - conditionals
+  - if
+---
 # Conditionals
 
-Conditional statements are at the core of computer programming. They are how we tell the computer when we would like a particular block of code executed. Without them, the same code would run every time in the exact same order, and that wouldn't be very interesting.
+Conditional statements are at the core of computer programming. They are how we
+tell the computer when we would like a particular block of code executed.
+Without them, the same code would run every time in the exact same order, and
+that wouldn't be very interesting. :shrug:
 
-The most common type of conditional operator is the `if/else` operator. Simply, this operator checks `if` something is true, and then does something if it is, and something `else` if it is not true. Let's see an example:
+The most common type of conditional operator is the `if/else` operator. Simply,
+this operator checks `if` something is true, and then does something if it is,
+and something `else` if it is not true. Let's see an example:
 
-```java title="If Else statements"
+```javascript title="if-else statements"
+number = 42;
 
-    number = 42
-
-    if (number < 50)
-    {
-        print("The number is less than 50");
-    }
-    else
-    {
-        print("The number is not less than 50");
-    }
-
+if (number < 50) {
+    print("The number is less than 50");
+} else if (number == 50){
+    print("The number is equal to 50");
+} else {
+    print("The number is greater than 50");
+}
 ```
 
-Take note of the form of this comparison. We start with the keyword `if`, and then follow with a comparison in parentheses, in this case `(number < 50)`. Then we have the block of code to execute if this is true with `{}`. This is followed by the keyword `else`, and another block of code to execute if the comparison is false, again between `{}`.
+Take note of the form of this comparison. We start with the keyword `if`, and
+then follow with a comparison in parentheses, in this case `(number < 50)`. Then
+we have the block of code to execute if this is true with `{}`. This is followed
+by the keyword `else`, and another block of code to execute if the comparison is
+false, again between `{}`. :fire:
 
-Generally speaking the if/else conditional block looks like this:
+!!!Warning
+    The `else if` and `else` statements are optional. You can have as many
+    `else if` statements as you want. However, you can only have one `else` and
+    one `if` statement.
 
-```java title="If Else statements"
-    if (comparison)
-    {
-        //code to execute if comparison is true
-    }
-    else
-    {
-        //code to execute if comparison is false
-    }
+## Comparison operators
 
+There are a number of comparison operators that we can use in conditional
+statements:
+
+```javascript title="Comparison operators"
+number = 42;
+smaller_than = number < 50;
+smaller_or_equal = number <= 50;
+greater_than = number > 50;
+greater_or_equal = number >= 50;
+equal = number == 50;
+not_equal = number != 50;
 ```
 
-
-??? question "Write a block of code that prints "The number is equal to five" if the variable `num` is equal to five, or "The number is not equal to five" if it is not."
-     ```java
-    if (num == 5)
-    {
-        print("The number is equal to 5");
-    }
-    else
-    {
-        print("The number is not equal to five");
-    }
-
-    ```
-
-??? question "Write a block of code that prints "The number is divisible by 10" if the variable `num` is divisible by 10, or "The number is not divisible by 10" if it is not. (hint, you should use the 'remainder' operator `%`. Can you work out what it does? Try a few math commands)"
-     ```java
-    if (num % 10 == 0)
-    {
-        print("The number is divisible by 10");
-    }
-    else
-    {
-        print("The number is not divisible by 10");
-    }
-
-    ```
-
-1. test
-
-
-
-
-
-- if else
-- comparison operators
-- negation
+These operators are empowering as they allow fine control when used with an
+`if-else` statement.

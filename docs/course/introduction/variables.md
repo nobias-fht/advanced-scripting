@@ -92,11 +92,3 @@ counter++;
 
 ??? question "What does `counter++` do?"
     That's right, it does exactly the same as `counter = counter + 1`
-
-!!!Question
-        What happens when you use mathematical operations on strings? Try some
-        and find out! What about if you try mathematical operations between
-        strings and numbers?
-
-But, variables can be much more than a number or a sentence! It is time to
-discover arrays.
