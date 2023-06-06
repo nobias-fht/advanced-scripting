@@ -13,7 +13,7 @@ Alright, let's try something useful this time. :smirk:
     Using the recorder, make a macro that opens an image. :thinking:
 
     You don't have an image? Simply open the `blobs` images again and save them
-    somwhere. :wink:
+    somewhere. :wink:
 
 ## Save an image
 

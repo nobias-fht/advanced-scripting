@@ -11,9 +11,9 @@ pasting it across the script. :sweat_smile:
 One way to avoid code duplication is to place them into a function. A function
 is a block of code that can be called from anywhere in the script. :muscle:
 
-For instance in this snippet, there is a lot of duplication:
+For instance in this snippet, there are some duplications:
 
-```javascript title="Macro with duplication"
+```javascript title="Macro with duplications"
 array1 = newArray(5);
 
 for (i = 0; i < array1.length; i++) {
@@ -75,12 +75,12 @@ function functionName(parameter1, parameter2, ...) {
 
 ## When to use functions?
 
-Whener you are going to us the same lines of code more than once, you should
+Whenever you are going to use the same lines of code more than once, you should
 consider using a function. :muscle:
 
-You can declare multiple functions as well. What is important is to keep the
-code clean. Smaller functions are easier to test and to debug, as you can
-call them with different parameter values and check the output. :sunglasses:
+You can declare multiple functions in the same script. What is important is to
+keep the code clean. Smaller functions are easier to test and to debug, as you
+can call them with different parameter values and check the output. :sunglasses:
 
 !!!Note
     Modifying existing code to make it more readable is called **refactoring**.

@@ -7,10 +7,15 @@ tags:
 # Documenting exercise
 
 !!!Question
-    Document and comment the following macro.
+    Document and comment the following macro:
 
-    *Note*: Don't over do it, just think a bit what would be interesting to
-    write. :rocket:
+    - Understand the functions and write a small comment describing what they do.
+    - Add some empty lines to make the code more readable in the last block.
+    - Add comments for the different steps of the last blocks.
+    - Finally, add a macro description at the top of the script.
+
+    *Note*: Don't over do it, just think what would be interesting to
+    write and make it short. :muscle:
 
     ```javascript title="Uncommented macro"
     path = "C:\\Users\\Margot\\Desktop\\projects\\20230612\\imaging_confocal";

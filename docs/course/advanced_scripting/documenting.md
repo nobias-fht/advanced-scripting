@@ -16,28 +16,30 @@ to grow beyond human comprehension. :alien:
 We have already seen comments in the previous section. Comments should explain
 what your code is doing, and why.
 
+Study the following example:
+
 ```javascript title="Example of a commented macro"
 // (1)!
 /*
- * This macro open images and applies Gaussian blur to each image.
- *
- * Some description on how to use the macro, where to put the images,
- * what type of images, etc.
- *
- * License: BSD-3 Clause
- * Authors: Fibula Borgmeister, Louis von Dibbelsdorf
- *          Humanoid Technopolis, 2023
- */
+This macro open images and applies Gaussian blur to each image.
+
+Some description on how to use the macro, where to put the images,
+what type of images, etc.
+
+License: BSD-3 Clause
+Authors: Fibula Borgmeister, Louis von Dibbelsdorf
+         Humanoid Technopolis, 2023
+*/
 
 // (2)!
 /*
- * Open all images inside a folder.
- *
- * Parameters
- * ----------
- * path : string
- *    Path to the folder containing the images.
- */
+Open all images inside a folder.
+
+Parameters
+----------
+path : string
+  Path to the folder containing the images.
+*/
 function open_images(path) {
     // do something
 }

@@ -27,18 +27,18 @@ macro editor! :open_mouth:
 That means that we can use the macro recorder to add steps to our macro, and
 then edit it to make it more useful. :sunglasses:
 
-## Plugins call
+## Command calls
 
-The macro recorder captures functions that are used internally to start ImageJ
-plugins. One such is the `run` function. It often looks something like this:
+The macro recorder captures functions that are used internally to call ImageJ
+commands. One such is the `run` function. It often looks something like this:
 
 ```javascript title="run Gaussian blur"
 run("Gaussian Blur...", "sigma=4");
 ```
 
 In this case, the `run` function is used to call the Gaussian blur plugin. The
-first argument is the name of the plugin, and the second is the parameters that
-are passed to the plugin. In this case, the parameter is the sigma value of the
+first argument is the name of the command, and the second is the parameters that
+are passed to the command. In this case, the parameter is the sigma value of the
 Gaussian blur. :nerd_face:
 
-Some plugins will require more parameters than others.
+Some commands will require more parameters than others.

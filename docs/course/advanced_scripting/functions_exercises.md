@@ -6,8 +6,8 @@ tags:
 # Functions exercises
 
 !!!Question
-    Run the following macro to write down the final result. Then refactor the
-    the code into one or several functions to avoid code duplication.
+    Run the following macro and write down the final result. Then refactor the
+    code into one or several functions to avoid code duplication.
 
     ```javascript title="Macro with duplication"
     array1 = newArray(1, 34, 6, 21, 84, 14, 8);
