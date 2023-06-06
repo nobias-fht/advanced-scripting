@@ -21,7 +21,7 @@ be found [here](https://nobias-fht.github.io/advanced-scripting/).
     pip install -r requirements.txt
     ```
 
-3. Install the commit pre-hooks
+3. (Optional, for developers) Install the commit pre-hooks
 
     ```bash
     pip install pre-commit
