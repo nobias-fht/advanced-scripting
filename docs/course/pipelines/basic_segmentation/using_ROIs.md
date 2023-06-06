@@ -95,7 +95,6 @@ From this, we can see that the number of bax-positive pixels (~area) is 12,984
 
 How about if we wanted not only the area, but the average intensity in each region?
 
-??? question "Add code to your script that measures the average intenisty 
 
 
     

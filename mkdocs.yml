@@ -52,6 +52,7 @@ nav:
         - course/pipelines/basic_segmentation/thresholding_an_image.md
         - course/pipelines/basic_segmentation/using_functions.md
         - course/pipelines/basic_segmentation/using_ROIs.md
+        - course/pipelines/basic_segmentation/measuring_intensity.md
 
 
   - demo.md
