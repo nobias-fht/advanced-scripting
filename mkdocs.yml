@@ -18,9 +18,6 @@ nav:
       - course/introduction/loops_exercises.md
       - course/introduction/conditionals.md
       - course/introduction/conditionals_exercises.md
-      - course/introduction/documenting.md
-      - course/introduction/functions.md
-      - course/introduction/treasure_hunt.md
   - Macro recorder:
       - course/macro_recorder/index.md
       - course/macro_recorder/recording.md
@@ -30,9 +27,14 @@ nav:
   - Advanced Macro:
       - course/advanced_scripting/index.md
       - course/advanced_scripting/functions.md
+      - course/advanced_scripting/functions_exercises.md
+      - course/advanced_scripting/documenting.md
+      - course/advanced_scripting/documenting_exercises.md
+      - course/advanced_scripting/functions.md
       - course/advanced_scripting/understanding_parameters.md
       - course/advanced_scripting/error_messages.md
       - course/advanced_scripting/user_interaction.md
+      - course/advanced_scripting/treasure_hunt.md
   - Pipelines:
       - course/pipelines/index.md
       - Looping through files:
