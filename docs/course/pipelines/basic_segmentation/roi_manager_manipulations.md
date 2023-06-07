@@ -44,4 +44,35 @@ Now that we can loop through our ROIs, let's rename them.
 
 Now we can select entries just using their names! Try `RoiManager.selectByName("nuclei");`
 
-Next, let's return to our task and build a macro that measures the area and intensity of the bax singal inside and outside the nucleus (using our fancy new ROI manager skills!) :nerd:
+Next, let's return to our task and build a macro that measures the area and intensity of the bax signal inside and outside the nucleus (using our fancy new ROI manager skills!) :nerd:
+
+??? question "Before we do, let's add the renaming code to our script"
+    ```javascript
+    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+    run("Split Channels");
+    selectWindow("C1-bax_DAPI_overlay.tif");
+    rename("nuclei");
+    selectWindow("C2-bax_DAPI_overlay.tif");
+    rename("bax");
+    selectWindow("nuclei");
+    run("Duplicate...", "title=nuclei_thresholded");
+    run("Auto Threshold", "method=Default white");
+    selectWindow("bax");
+    run("Duplicate...", "title=bax_thresholded");
+    run("Auto Threshold", "method=Default white");
+    selectWindow('nuclei_thresholded');
+    run("Create Selection");
+    roiManager("Add");
+    run("Make Inverse");
+    roiManager("Add");
+    selectWindow('bax_thresholded');
+    run("Create Selection");
+    roiManager("Add");
+    
+    name_array = newArray("nuclei", "nuclei_inverted", "bax")
+    for (i=0; i<roiManager("count"); i++) {
+        roiManager("Select", i);
+        roiManager("rename", name_array[i]);
+    }
+        
+    ```

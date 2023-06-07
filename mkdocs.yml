@@ -58,12 +58,11 @@ nav:
         - course/pipelines/basic_segmentation/introduction.md
         - course/pipelines/basic_segmentation/multiple_image_windows.md
         - course/pipelines/basic_segmentation/thresholding_an_image.md
-        - course/pipelines/basic_segmentation/using_functions.md
         - course/pipelines/basic_segmentation/using_ROIs.md
         - course/pipelines/basic_segmentation/roi_manager_adding.md
         - course/pipelines/basic_segmentation/roi_manager_manipulations.md
         - course/pipelines/basic_segmentation/measuring_from_roi_manager.md
-
+        - course/pipelines/basic_segmentation/using_functions.md
   - demo.md
 
 theme:
