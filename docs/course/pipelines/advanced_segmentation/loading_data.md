@@ -23,21 +23,37 @@ list = getList("window.titles");
 ```
 
 ??? question "Write code to iterate through this list and rename the windows in the following order: C1 = nuclei, C2 = marker_1, C3 = marker_2. Hint: You've seen something similar when we renamed the ROIs in the previous exercise!"
-    ```javascript hl_lines = "3 4 5 6 7 8"
+    ```javascript hl_lines="3 4 5 6 7 8"
     open("C:/local_course/data/advanced_segmentation/control/siCntrl_1.tif");
     run("Split Channels");
     list = getList("image.titles");
-    names = newArray("DAPI", "marker_1", "marker_2");
+    names = newArray("DAPI", "marker_1", "marker_2");  //(1)!
     for (i = 0; i < list.length; i++) {
         selectWindow(list[i]);
         rename(names[i]);
     }
     ```
 
+    1. Can you think of another way of doing this? Maybe using string matching and if/else statements?
+
 
 Hmmmm this looks like a nice, self-contained bit of code. Maybe we should make it into a function?
 
+??? question "Turn this into a function that takes in a file path as an argument"
+    ```javascript
+    function splitAndRenameChannels(file) {
+        open(file);
+        run("Split Channels");
+        list = getList("image.titles");
+        names = newArray("DAPI", "marker_1", "marker_2");
+        for (i = 0; i < list.length; i++) {
+            selectWindow(list[i]);
+            rename(names[i]);
+    }
+    }
+    splitAndRenameChannels("C:/local_course/data/advanced_segmentation/control/siCntrl_1.tif")
+    ```
 
-
+Next, we will apply our pixel classifier to the nuclear image!
 
 
