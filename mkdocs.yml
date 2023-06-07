@@ -48,9 +48,19 @@ nav:
           - course/pipelines/looping_through_files/summary.md
           - course/pipelines/looping_through_files/simple_gui.md
       - Simple Object Tracking:
-          - course/pipelines/simple_object_tracking/introduction.md
-          - course/pipelines/simple_object_tracking/navigating_image_stacks.md
-
+        - course/pipelines/simple_object_tracking/introduction.md
+        - course/pipelines/simple_object_tracking/navigating_image_stacks.md
+        - course/pipelines/simple_object_tracking/getting_mouse_xy_position.md
+        - course/pipelines/simple_object_tracking/measure_position_over_time.md
+        - course/pipelines/simple_object_tracking/writing_to_file.md
+        - course/pipelines/simple_object_tracking/append_file.md
+      - Basic Segmentation:
+        - course/pipelines/basic_segmentation/introduction.md
+        - course/pipelines/basic_segmentation/multiple_image_windows.md
+        - course/pipelines/basic_segmentation/thresholding_an_image.md
+        - course/pipelines/basic_segmentation/using_functions.md
+        - course/pipelines/basic_segmentation/using_ROIs.md
+        - course/pipelines/basic_segmentation/measuring_intensity.md
   - demo.md
 
 theme:
