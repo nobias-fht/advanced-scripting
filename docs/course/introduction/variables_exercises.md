@@ -12,7 +12,7 @@ tags:
         and find out!
 
 !!!Question
-        What about if you try mathematical operations between
+        What happens if you try mathematical operations between
         strings and numbers?
 
 !!!Question
