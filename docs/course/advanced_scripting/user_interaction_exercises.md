@@ -13,7 +13,6 @@ tags:
     #@output String myString
 
     myString = ;
-
     ```
 
     Then, follow these steps:

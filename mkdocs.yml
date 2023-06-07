@@ -27,12 +27,12 @@ nav:
       - course/macro_recorder/thresholding.md
   - Advanced Macro:
       - course/advanced_scripting/index.md
+      - course/advanced_scripting/advanced_paths.md
+      - course/advanced_scripting/advanced_paths_exercises.md
       - course/advanced_scripting/functions.md
       - course/advanced_scripting/functions_exercises.md
       - course/advanced_scripting/documenting.md
       - course/advanced_scripting/documenting_exercises.md
-      - course/advanced_scripting/advanced_paths.md
-      - course/advanced_scripting/advanced_paths_exercises.md
       - course/advanced_scripting/user_interaction.md
       - course/advanced_scripting/user_interaction_exercises.md
       - course/advanced_scripting/treasure_hunt.md

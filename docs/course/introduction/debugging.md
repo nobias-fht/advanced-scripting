@@ -11,7 +11,7 @@ corrected in 0.1 s. Annoying, but unavoidable. :bug:
 Better be prepared then! :muscle:
 
 !!!Question
-    Find the errors in the following macro:
+    Find the errors in the following macro and correct them:
 
     ```javascript title="A buggy macro"
     // Starting value
@@ -26,7 +26,7 @@ Better be prepared then! :muscle:
     }
 
     // Create a string and print
-    string = "The number is " + number + ".";
+    string = "The number is "+number".";
     print(string)
 
     // The number should be 25
