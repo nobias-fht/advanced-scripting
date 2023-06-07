@@ -7,7 +7,7 @@ tags:
 
 !!! question
     Previously, we saw that we could `split` the variable
-    `string = 'myfile.tif'` at the `.` character.
+    `string = "myfile.tif"` at the `.` character.
 
     What would the output be if we changed the code to split the string at the
     character `i` instead of the `.`?

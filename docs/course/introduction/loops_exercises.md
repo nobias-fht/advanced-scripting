@@ -43,3 +43,6 @@ tags:
 
 !!! question
     Can we can count backward (e.g. from 10 to 0) using a for loop?
+
+!!! question
+    Can you write a loop within a loop? What do you need to pay attention to?
