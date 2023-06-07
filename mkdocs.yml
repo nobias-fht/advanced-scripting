@@ -63,6 +63,10 @@ nav:
         - course/pipelines/basic_segmentation/roi_manager_manipulations.md
         - course/pipelines/basic_segmentation/measuring_from_roi_manager.md
         - course/pipelines/basic_segmentation/using_functions.md
+      - Advanced Segmentation:
+        - course/pipelines/advanced_segmentation/introduction.md
+
+
   - demo.md
 
 theme:
