@@ -3,18 +3,21 @@ site_name: nobias advanced scripting
 nav:
   - Home:
       - index.md
-  - Installation:
-      - course/installation/installing_fiji.md
-      - course/installation/getting_started.md
+  - course/installation/installing_fiji.md
+  - course/installation/starting_macro.md
   - Introduction:
       - course/introduction/index.md
+      - course/introduction/print.md
       - course/introduction/variables.md
+      - course/introduction/variables_exercises.md
       - course/introduction/arrays.md
+      - course/introduction/arrays_exercises.md
       - course/introduction/strings.md
+      - course/introduction/strings_exercises.md
       - course/introduction/loops.md
+      - course/introduction/loops_exercises.md
       - course/introduction/conditionals.md
-      - course/introduction/documenting.md
-      - course/introduction/functions.md
+      - course/introduction/conditionals_exercises.md
   - Macro recorder:
       - course/macro_recorder/index.md
       - course/macro_recorder/recording.md
@@ -24,21 +27,26 @@ nav:
   - Advanced Macro:
       - course/advanced_scripting/index.md
       - course/advanced_scripting/functions.md
-      - course/advanced_scripting/understanding_parameters.md
-      - course/advanced_scripting/error_messages.md
+      - course/advanced_scripting/functions_exercises.md
+      - course/advanced_scripting/documenting.md
+      - course/advanced_scripting/documenting_exercises.md
+      - course/advanced_scripting/advanced_paths.md
+      - course/advanced_scripting/advanced_paths_exercises.md
       - course/advanced_scripting/user_interaction.md
+      - course/advanced_scripting/user_interaction_exercises.md
+      - course/advanced_scripting/treasure_hunt.md
   - Pipelines:
       - course/pipelines/index.md
       - Looping through files:
-        - course/pipelines/looping_through_files/introduction.md
-        - course/pipelines/looping_through_files/getting_file_list.md
-        - course/pipelines/looping_through_files/looping_through_list.md
-        - course/pipelines/looping_through_files/getting_list_length.md
-        - course/pipelines/looping_through_files/opening_files.md
-        - course/pipelines/looping_through_files/operating_on_open_files.md
-        - course/pipelines/looping_through_files/saving_and_closing_files.md
-        - course/pipelines/looping_through_files/summary.md
-        - course/pipelines/looping_through_files/simple_gui.md
+          - course/pipelines/looping_through_files/introduction.md
+          - course/pipelines/looping_through_files/getting_file_list.md
+          - course/pipelines/looping_through_files/looping_through_list.md
+          - course/pipelines/looping_through_files/getting_list_length.md
+          - course/pipelines/looping_through_files/opening_files.md
+          - course/pipelines/looping_through_files/operating_on_open_files.md
+          - course/pipelines/looping_through_files/saving_and_closing_files.md
+          - course/pipelines/looping_through_files/summary.md
+          - course/pipelines/looping_through_files/simple_gui.md
       - Simple Object Tracking:
         - course/pipelines/simple_object_tracking/introduction.md
         - course/pipelines/simple_object_tracking/navigating_image_stacks.md
@@ -53,8 +61,6 @@ nav:
         - course/pipelines/basic_segmentation/using_functions.md
         - course/pipelines/basic_segmentation/using_ROIs.md
         - course/pipelines/basic_segmentation/measuring_intensity.md
-
-
   - demo.md
 
 theme:

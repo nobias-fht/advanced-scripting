@@ -1,3 +1,8 @@
+---
+tags:
+  - demo
+  - help
+---
 # Demo
 
 !!!Note

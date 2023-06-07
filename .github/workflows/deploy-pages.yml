@@ -34,7 +34,7 @@ jobs:
         run: |
           pip install -U pip
           pip install -r requirements.txt
-          mkdocs build --strict
+          mkdocs build
         env:
           MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}

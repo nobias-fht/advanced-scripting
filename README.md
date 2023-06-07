@@ -1,6 +1,13 @@
+<p align="center">
+    <a href="https://nobias-fht.github.io/advanced-scripting/">
+    <img src="https://github.com/nobias-fht/.github/blob/main/images/banner_nobgd.png?raw=true">
+    </a>
+</p>
+
 # Welcome
 
-some blahblah
+Welcome to the advanced scripting with ImageJ macros from the NoBIAS facility of the Human Technopole. The website can 
+be found [here](https://nobias-fht.github.io/advanced-scripting/).
 
 ## How to run this site locally
 
@@ -16,7 +23,7 @@ some blahblah
     pip install -r requirements.txt
     ```
 
-3. Install the commit pre-hooks
+3. (Optional, for developers) Install the pre-commit hooks
 
     ```bash
     pip install pre-commit
