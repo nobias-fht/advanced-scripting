@@ -7,7 +7,7 @@ tags:
 
 !!! question
     Previously, we saw that we could `split` the variable
-    `string = 'myfile.tif'` at the `.` character.
+    `string = "myfile.tif"` at the `.` character.
 
     What would the output be if we changed the code to split the string at the
     character `i` instead of the `.`?
@@ -15,6 +15,9 @@ tags:
 !!! question
     Write code to remove the numeric value from the string
     `my_new_8463_file.tif`.
+
+    Can you do it without hard-coding the number `8463` and its position
+    in the string?
 
     *Hint*: the final value should look like `my_new_file.tif`
 
@@ -38,5 +41,8 @@ tags:
 
     Play with them and picture what they can be useful for. :thinking:
 
-??? question "Why do some of these return `0` or `1`?"
-    In computer programming, a value of `1` is often used to signify `True` and a value of `0` to signify `False`. In these cases, the computer is just telling us whether the question we asked it is `True` or `False`.
+    Why do some of these return `0` or `1`?
+
+    Answer: In computer programming, a value of `1` is often used to signify `True` and
+    a value of `0` to signify `False`. In these cases, the computer is just
+    telling us whether the question we asked it is `True` or `False`.

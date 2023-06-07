@@ -12,10 +12,6 @@ tags:
         and find out!
 
 !!!Question
-        What happens if you try mathematical operations between
-        strings and numbers?
-
-!!!Question
         If you have the following variables:
 
         ```javascript title="Variable values"
@@ -24,8 +20,10 @@ tags:
         var3 = var1 == var2;
         ```
 
-        What is the value of `var3`? What does `==` mean? Where would you go
-        to find out? :skull_and_crossbones:
+        What is the value of `var3`? What does `==` means? What happens if you
+        replace `==` by `!=`?
+
+        Where would you go to find out? :skull_and_crossbones:
 
 Variables can be much more than a number or a sentence! It is time to
 discover arrays. :mag_right:

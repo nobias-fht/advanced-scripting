@@ -27,4 +27,4 @@ tags:
     Write a for loop that prints the numbers from 1 to 10 and warns user when
     the number is a multiple of 3.
 
-    *Hint*: you should use the `remainder` operator `%`.
+    *Hint*: you should use the `remainder` operator `%` again.

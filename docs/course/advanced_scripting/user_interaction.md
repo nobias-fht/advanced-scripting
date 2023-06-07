@@ -6,7 +6,7 @@ tags:
 # User interaction
 
 A macro is nice, but many errors come from hard-coding values or paths in the
-sciript. You forgot to change one parameter? Well, everything crashed and you
+script. You forgot to change one parameter? Well, everything crashed and you
 are looking at 1h of debugging. :sob:
 
 To make macros and scripts friendlier, the ImageJ2 team came up with `script
