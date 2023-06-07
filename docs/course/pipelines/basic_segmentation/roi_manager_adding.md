@@ -45,7 +45,7 @@ The ROI manager has a lot of useful macro commands attached to it, which can be 
     selectWindow("nuclei");
     run("Duplicate...", "title=nuclei_thresholded");
     run("Auto Threshold", "method=Default white");
-    selectWindogitw("bax");
+    selectWindow("bax");
     run("Duplicate...", "title=bax_thresholded");
     run("Auto Threshold", "method=Default white");
     selectWindow('nuclei_thresholded');
