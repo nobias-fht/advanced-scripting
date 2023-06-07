@@ -45,9 +45,9 @@ could easily write the following code:
 
 ```javascript title="Bad Variable Names"
 
-number = "Hello world"
-dog = "Cat"
-xyz_63193 = 42
+number = "Hello world";
+dog = "Cat";
+xyz_63193 = 42;
 
 ```
 
@@ -61,10 +61,10 @@ to the same variable `name`:
 
 ```javascript title="Variables"
 
-message = "This is a message"
-print(message)
-message = "This is a new message"
-print(message)
+message = "This is a message";
+print(message);
+message = "This is a new message";
+print(message);
 
 ```
 
@@ -88,6 +88,7 @@ print(new_number);
 counter = 0;
 counter = counter + 1;
 counter++;
+print(counter);
 ```
 
 ??? question "What does `counter++` do?"

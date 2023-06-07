@@ -29,10 +29,14 @@ tags:
     my_string.contains("is");
 
     substring(my_string, 10, 26);
-    indexOf(my_string, "lot of Information");
+    indexOf(my_string, "lot of information");
     startsWith(my_string, "This");
     endsWith(my_string, "that.");
     toLowerCase(my_string);
+    toUpperCase(my_string);
     ```
 
     Play with them and picture what they can be useful for. :thinking:
+
+??? question "Why do some of these return `0` or `1`?"
+    In computer programming, a value of `1` is often used to signify `True` and a value of `0` to signify `False`. In these cases, the computer is just telling us whether the question we asked it is `True` or `False`.

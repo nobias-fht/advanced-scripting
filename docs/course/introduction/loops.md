@@ -59,7 +59,7 @@ while (condition){
 ```
 
 This can be very useful to continue executing a block of code until a condition
-is met. For example, we could continue eroding a binary image until there are
+is met. For example, we could continue eroding a binary image until there are no
 objects greater that 1000 pixels in size, for example.
 
 A simpler example would be the following:

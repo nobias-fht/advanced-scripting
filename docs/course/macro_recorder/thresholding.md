@@ -8,6 +8,6 @@ tags:
 Open the `Blobs` image again from the samples (`File > Open Samples`).
 
 !!!Question
-    Using the recorder, run all thresholds methods on the image.
+    Using the recorder, run all thresholding methods on the image.
 
-    *Hint*: It is only one click to rull every threshold methods. :wink:
+    *Hint*: It is only one click to rull every threshold method. :wink:
