@@ -9,3 +9,8 @@ want to use, and there is no way we are rewriting all of them ourselves. :zany_f
 
 Luckily, there is a way to record the actions we do in Fiji and get the
 instructions to put in a macro. It is called the `Macro recorder`. :fire:
+
+!!! info "Learning Objectives"
+
+    * Learn how to use the macro recorder
+    * Explore different commands

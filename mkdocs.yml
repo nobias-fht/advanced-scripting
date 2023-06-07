@@ -39,7 +39,7 @@ nav:
   - Pipelines:
       - course/pipelines/index.md
       - Looping through files:
-          - course/pipelines/looping_through_files/introduction.md
+          - course/pipelines/looping_through_files/index.md
           - course/pipelines/looping_through_files/getting_file_list.md
           - course/pipelines/looping_through_files/looping_through_list.md
           - course/pipelines/looping_through_files/getting_list_length.md
