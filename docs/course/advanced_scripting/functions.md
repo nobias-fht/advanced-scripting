@@ -44,7 +44,7 @@ function fillArray(size) { // (1)!
 
     Array.print(array);
 
-    return array // (3)!
+    return array; // (3)!
 }
 
 array1 = fillArray(5); // (4)!

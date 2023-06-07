@@ -1,12 +1,12 @@
-#Measuring Intensity and the using ROI manager
+# Measuring Intensity and the using ROI manager
 
-We can use our ROIs to measure not just the integrated density, but the average intensity of the bax signal. 
+We can use our ROIs to measure not just the integrated density, but the average intensity of the bax signal.
 
 To do this, however, we need to measure only the average in intensity of the signal in the ROI defined by the bax segmentation, not the nuclei. How could we do this?
 
 Let's do this a slightly different way, and clean up our code a little bit at the same time, using the ROI manager.
 
-The ROI manager has a lot of useful macro commands attached to it, which can be found in the "built in macro functions" section of the imageJ docs (https://imagej.nih.gov/ij/developer/macro/functions.html). Let's delete all of the code highlighted below from our macro. Dont worry! We're going to replace it with something better. Deleting old code and re-writing it in a better way  is a key part of softwae development.
+The ROI manager has a lot of useful macro commands attached to it, which can be found in the "built in macro functions" section of the imageJ docs (<https://imagej.nih.gov/ij/developer/macro/functions.html>). Let's delete all of the code highlighted below from our macro. Dont worry! We're going to replace it with something better. Deleting old code and re-writing it in a better way  is a key part of softwae development.
 
 ```javascript hl_lines="15 16 17 18 19 20 21 22 23"
     open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
@@ -27,13 +27,12 @@ The ROI manager has a lot of useful macro commands attached to it, which can be 
     run("Restore Selection");
     run("Measure");
     int_den_inside = getResult("IntDen", 0);
-    print("the number of bax-positive pixels inside the nuclei is " + int_den_inside / 255); 
+    print("the number of bax-positive pixels inside the nuclei is " + int_den_inside / 255);
     run("Make Inverse");
     run("Measure");
     int_den_outside = getResult("IntDen", 1);
-    print("the number of bax-positive pixels outside the nuclei is " + int_den_outside / 255); 
+    print("the number of bax-positive pixels outside the nuclei is " + int_den_outside / 255);
 ```
-
 
 ??? question "From the docs, find out how to add the ROIs to the manager in your script, and (importantly!) how to rename them. Modify your macro so that you add the ROIs. Also add the inverse of the nuclei ROI."
     ```javascript hl_lines="14 15 16 17 18"
@@ -46,7 +45,7 @@ The ROI manager has a lot of useful macro commands attached to it, which can be 
     selectWindow("nuclei");
     run("Duplicate...", "title=nuclei_thresholded");
     run("Auto Threshold", "method=Default white");
-    selectWindow("bax");
+    selectWindogitw("bax");
     run("Duplicate...", "title=bax_thresholded");
     run("Auto Threshold", "method=Default white");
     selectWindow('nuclei_thresholded');
@@ -57,7 +56,6 @@ The ROI manager has a lot of useful macro commands attached to it, which can be 
     selectWindow('bax_thresholded');
     run("Create Selection");
     roiManager("Add");
-    ```
-
+```
 
 While we're here, let's add code to add the inverse of the nuclei image

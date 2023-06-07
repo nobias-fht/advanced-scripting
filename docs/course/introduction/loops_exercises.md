@@ -8,7 +8,7 @@ tags:
 !!! question
     What is the problem with the following loops:
 
-    ```javascript title="A problematic loop"
+    ```javascript title="Some problematic loops"
     for (i=0; i>10; i++){
         print(i);
     }
@@ -20,7 +20,7 @@ tags:
 
     And in this code snippet:
 
-    ```javascript title="Another problematic loop"
+    ```javascript title="Some more problematic loops"
     for (i=0; i<5; i++){
         print(i);
     }
