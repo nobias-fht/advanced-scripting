@@ -16,8 +16,9 @@ Here we will make a simple script to semi-automate this process, letting us
 track an object using the mouse and a key binding. :mouse:
 
 !!! info "Learning Objectives"
-    *Learn how to navigate an image stack
+
+    * Learn how to navigate an image stack
     * Learn how to read the mouse position
-    *Learn how to hotkey a macro
+    * Learn how to hotkey a macro
     * learn how to install a macro that you've written
     * learn how to save results to a csv file
