@@ -12,7 +12,9 @@ tags:
     for (i=0; i>10; i++){
         print(i);
     }
+    ```
 
+    ```javascript title="Another problematic loop"
     for (i=0; i<10; i--){
         print(i);
     }
@@ -25,11 +27,13 @@ tags:
         print(i);
     }
 
-    j = 0
+    j = 0;
     while (i<10){
         j += 2;
     }
     ```
+
+    :warning: If you run them, you might have to kill your Fiji session.
 
 !!! question
     Can you write a for loop that runs 20 times? And a while loop?
