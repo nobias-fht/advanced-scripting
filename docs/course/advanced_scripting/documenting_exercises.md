@@ -18,7 +18,8 @@ tags:
     write and make it short. :muscle:
 
     ```javascript title="Uncommented macro"
-    path = "C:\\Users\\Margot\\Desktop\\projects\\20230612\\imaging_confocal";
+    home = getDirectory("home");
+    path = home+"Desktop"+File.separator+"projects"+File.separator+"20230612"+File.separator+"imaging_confocal";
 
     function indexInArray( array, value ) {
         for (i=0; i<array.length; i++) {
@@ -63,11 +64,11 @@ tags:
     function prettyDate(day, month, year){
         prettyMonth = getMonth(month);
 
-        print("The experiment was performed on the "+day+"th of "+prettyMonth+" of "+year+".");
+        print("The experiment was performed on the "+day+"th of "+prettyMonth+" "+year+".");
     }
 
 
-    folders = split(path, "\\");
+    folders = split(path, File.separator);
     index_project = indexInArray(folders, "projects");
     date = folders[index_project+1];
     year = substring(date, 0, 4);

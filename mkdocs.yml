@@ -18,6 +18,7 @@ nav:
       - course/introduction/loops_exercises.md
       - course/introduction/conditionals.md
       - course/introduction/conditionals_exercises.md
+      - course/introduction/debugging.md
   - Macro recorder:
       - course/macro_recorder/index.md
       - course/macro_recorder/recording.md
@@ -26,12 +27,12 @@ nav:
       - course/macro_recorder/thresholding.md
   - Advanced Macro:
       - course/advanced_scripting/index.md
+      - course/advanced_scripting/advanced_paths.md
+      - course/advanced_scripting/advanced_paths_exercises.md
       - course/advanced_scripting/functions.md
       - course/advanced_scripting/functions_exercises.md
       - course/advanced_scripting/documenting.md
       - course/advanced_scripting/documenting_exercises.md
-      - course/advanced_scripting/advanced_paths.md
-      - course/advanced_scripting/advanced_paths_exercises.md
       - course/advanced_scripting/user_interaction.md
       - course/advanced_scripting/user_interaction_exercises.md
       - course/advanced_scripting/treasure_hunt.md
@@ -48,25 +49,23 @@ nav:
           - course/pipelines/looping_through_files/summary.md
           - course/pipelines/looping_through_files/simple_gui.md
       - Simple Object Tracking:
-        - course/pipelines/simple_object_tracking/introduction.md
-        - course/pipelines/simple_object_tracking/navigating_image_stacks.md
-        - course/pipelines/simple_object_tracking/getting_mouse_xy_position.md
-        - course/pipelines/simple_object_tracking/measure_position_over_time.md
-        - course/pipelines/simple_object_tracking/writing_to_file.md
-        - course/pipelines/simple_object_tracking/append_file.md
+          - course/pipelines/simple_object_tracking/introduction.md
+          - course/pipelines/simple_object_tracking/navigating_image_stacks.md
+          - course/pipelines/simple_object_tracking/getting_mouse_xy_position.md
+          - course/pipelines/simple_object_tracking/measure_position_over_time.md
+          - course/pipelines/simple_object_tracking/writing_to_file.md
+          - course/pipelines/simple_object_tracking/append_file.md
       - Basic Segmentation:
-        - course/pipelines/basic_segmentation/introduction.md
-        - course/pipelines/basic_segmentation/multiple_image_windows.md
-        - course/pipelines/basic_segmentation/thresholding_an_image.md
-        - course/pipelines/basic_segmentation/using_ROIs.md
-        - course/pipelines/basic_segmentation/roi_manager_adding.md
-        - course/pipelines/basic_segmentation/roi_manager_manipulations.md
-        - course/pipelines/basic_segmentation/measuring_from_roi_manager.md
-        - course/pipelines/basic_segmentation/using_functions.md
+          - course/pipelines/basic_segmentation/introduction.md
+          - course/pipelines/basic_segmentation/multiple_image_windows.md
+          - course/pipelines/basic_segmentation/thresholding_an_image.md
+          - course/pipelines/basic_segmentation/using_ROIs.md
+          - course/pipelines/basic_segmentation/roi_manager_adding.md
+          - course/pipelines/basic_segmentation/roi_manager_manipulations.md
+          - course/pipelines/basic_segmentation/measuring_from_roi_manager.md
+          - course/pipelines/basic_segmentation/using_functions.md
       - Advanced Segmentation:
-        - course/pipelines/advanced_segmentation/introduction.md
-
-
+          - course/pipelines/advanced_segmentation/introduction.md
   - demo.md
 
 theme:

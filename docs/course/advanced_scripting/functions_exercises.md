@@ -27,5 +27,6 @@ tags:
     mean_array2 = sum_array2 / array2.length;
     ratio /= sum_array2 * sum_array2 / mean_array2;
 
+    // It should print 0.7179
     print("Ratio: "+ratio);
     ```

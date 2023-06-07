@@ -37,3 +37,4 @@ Are you ready? Let's learn some stuff. :woman_climbing:
     - [Introduction to Macro programming](https://imagej.net/scripting/macro)
     - [Macro language documentation](https://imagej.nih.gov/ij/developer/macro/macros.html)
     - [Image.sc forum](https://image.sc)
+    - [A great cheat sheet](https://www.biodip.de/w/images/0/00/ImageJ_macro_cheatsheet.pdf)
