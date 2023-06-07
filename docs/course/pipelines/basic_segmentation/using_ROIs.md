@@ -38,7 +38,7 @@ There are many ways of doing this, but an easy one is to measure the integrated 
 
  In our case, this will be the number of pixels * pixel intensitry. Since our pixels are either 0 or 255 in a thresholded image, integrated density / 255 will give us the number of non-zero pixels in the ROI!
 
-??? question "Add code to your script that will calculate the number of non-zero pixels, using integrated denisty. HINT: You will have to access the measured value in the results table. How could we do this?"
+??? question "Add code to your script that will calculate the number of non-zero pixels, using integrated density. HINT: You will have to access the measured value in the results table. How could we do this?"
     ```javascript hl_lines="17 18 19"
     open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
     run("Split Channels");
