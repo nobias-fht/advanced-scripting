@@ -10,7 +10,7 @@ tags:
     second, fifth and eighth values in the array? How would you print them?
 
     ```javascript title="Print values from array"
-        my_array = newArray("0", "1", "2", "3", "4", "5", "6", "7", "8', "9", 10"); //(1)!
+         my_array = newArray(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10); //(1)!
     ```
 
     1. While this is a perfectly valid way of initializing array, it would be

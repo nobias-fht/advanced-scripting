@@ -24,7 +24,7 @@ tags:
         var3 = var1 == var2;
         ```
 
-        What is the value of `var3`? What does `==` means? Where would you go
+        What is the value of `var3`? What does `==` mean? Where would you go
         to find out? :skull_and_crossbones:
 
 Variables can be much more than a number or a sentence! It is time to

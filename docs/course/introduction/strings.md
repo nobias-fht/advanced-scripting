@@ -15,9 +15,9 @@ tags:
  ```
 
 The ability to store and manipulate strings is a key part of `ImageJ Macro`
-programming, so let's take a close looks. :mag_right:
+programming, so let's take a close look. :mag_right:
 
-We can create a string in the same way we create any other variable, but picking
+We can create a string in the same way we create any other variable, by picking
 a name and assigning a value to it. In the case of strings, the value must be
 enclosed in quotation marks `"`. :warning:
 
@@ -57,9 +57,10 @@ name, we could `split` the string at the `.`.
 ```javascript
 string = "myfile.tif";
 split_string = split(string, '.');
-print(split_string[0]+", "+split_string[1]);
+print(split_string[0] + ", " + split_string[1]);
 ```
 
-The `split` function returns an array which contains the split strings. In this
-case, the array would contain the values `myfile` and `tif` (because we have
-chosen to split the string at the `.`). :rocket:
+??? question "What is stored in the variable `split_string`? Hint: Look at the syntax for printing the returned value"
+    The `split` function returns an array which contains the split strings. In this
+    case, the array would contain the values `myfile` and `tif` (because we have
+    chosen to split the string at the `.`). :rocket:
