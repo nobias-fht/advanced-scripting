@@ -1,3 +1,8 @@
+---
+tags:
+  - pipeline
+  - arrays
+---
 # Using the Array.length function
 
 How can we fix this problem? Wouldn't it be great if we could ask Fiji how many

@@ -1,3 +1,8 @@
+---
+tags:
+  - pipeline
+  - files
+---
 # Getting a list of files
 
 First, we need to get a list of all the files in the input folder so that we can

@@ -2,6 +2,8 @@
   /* Code color shades */
   /* --md-code-fg-color: #abb2bf; */
   /* --md-code-bg-color: #282c34; */
+  /*--md-code-hl-string-color: #0f8bf1;*/
+  --md-code-hl-color: hsla(218, 100%, 62%, 0.325);
   --md-code-border-radius: 8px;
   --nav-size: 0.72rem;
   --link-out-svg: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0yMiAzaDd2N20tMS41LTUuNUwyMCAxMm0tMy03SDhhMyAzIDAgMCAwLTMgM3YxNmEzIDMgMCAwIDAgMyAzaDE2YTMgMyAwIDAgMCAzLTN2LTkiLz48L3N2Zz4=");

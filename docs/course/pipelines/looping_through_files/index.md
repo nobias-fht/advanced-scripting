@@ -1,3 +1,7 @@
+---
+tags:
+  - intro
+---
 # Looping through files
 
 In the folder called `looping_through_files`, you will find a series of images.

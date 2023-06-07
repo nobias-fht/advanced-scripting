@@ -17,7 +17,7 @@ Macro` language, as well as some basic concepts in programmimg.
 
 !!! info "Learning Objectives"
 
-    * Priting to the log
+    * Printing to the log
     * Using variables
     * Creating arrays
     * Manipulating strings

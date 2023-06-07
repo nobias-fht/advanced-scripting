@@ -1,3 +1,8 @@
+---
+tags:
+  - pipeline
+  - files
+---
 # Opening Files
 
 In this section we will start building our actual script piece-by-piece. The
@@ -16,8 +21,9 @@ script we are currently working on in any section will always appear like this:
 Let's start by putting in our loop functionality from the previous section:
 
 ??? example "Macro: Open, Save and Close Files"
+
     ```javascript
-    folder = "XXX/XXX/XXX/" // <= replace with your (OS-agnostic) folder path
+    folder = "XXX/XXX/XXX" // <= replace with your (OS-agnostic) folder path
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 
@@ -46,12 +52,13 @@ function a concatenation of this path (a string) and the file name (another
 string).
 
 ??? question "How can we generate the path?"
+
     ```javascript
-    folder = "XXX/XXX/XXX/"; // <= replace with your (OS-agnostic) folder path
+    folder = "XXX/XXX/XXX"; // <= replace with your (OS-agnostic) folder path
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 
-    file_path = folder + file_list[0];
+    file_path = folder + File.separator + file_list[0];
     print(file_path);
     ```
 
@@ -63,14 +70,14 @@ Now, add this code snippet to your script, but instead of using `print` to
 print the path of the file, use `open` to open the file.
 
 ??? example "Macro: Open, Save and Close Files"
-    ```javascript
 
+    ```javascript hl_lines="6 7"
     folder = "XXX/XXX/XXX/"; // <= replace with your (OS-agnostic) folder path
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 
     for (i=0; i<number_of_files; i++) {
-        file_path = folder + file_list[0];
+        file_path = folder + File.separator + file_list[0];
         open(file_path);
     }
     ```

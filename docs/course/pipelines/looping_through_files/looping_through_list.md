@@ -1,3 +1,9 @@
+---
+tags:
+  - pipeline
+  - arrays
+  - loops
+---
 # Looping Through an Array
 
 Our list is an array, and we have seen earlier how arrays are indexed. Let's
