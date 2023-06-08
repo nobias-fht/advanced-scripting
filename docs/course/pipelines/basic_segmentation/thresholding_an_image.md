@@ -6,7 +6,7 @@ A better approach is to select an autothreshold method.
 
 ??? question "Add to your script steps to threshold both images using ImageJ's autothreshold feature. Hint: You might want to make copies of these files before you threshold them, so that we have the raw images to work with later!"
     ```javascript
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");

@@ -16,7 +16,7 @@ Similarly to how we build a file_path for the input image to pass into the 'open
 
 ??? example "Macro: Open, Save and Close Files"
     ```javascript
-    folder = "XXX/XXX/XXX"
+    folder = "path/to/file"
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 
@@ -38,7 +38,7 @@ After this, all that remains is to add the code to `close` the file. Find the co
 
 ??? example "Macro: Open, Save and Close Files"
     ```javascript
-    folder = "XXX/XXX/XXX"
+    folder = "path/to/file"
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 
@@ -57,7 +57,7 @@ Take a moment to look through the above code. Make sure you understand what each
 
 ??? Question "At the end of each line, use a comment `//` to put a description of what the line is doing. This will help solidify your understanding of the code"
     ```javascript
-    folder = "XXX/XXX/XXX"
+    folder = "path/to/file"
     file_list = getFileList(folder);  //get the list of files in the folder
     number_of_files = file_list.length; //find out how many files there are in the folder
 

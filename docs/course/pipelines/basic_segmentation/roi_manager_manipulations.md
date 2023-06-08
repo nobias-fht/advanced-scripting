@@ -48,7 +48,7 @@ Next, let's return to our task and build a macro that measures the area and inte
 
 ??? question "Before we do, let's add the renaming code to our script"
     ```javascript
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");

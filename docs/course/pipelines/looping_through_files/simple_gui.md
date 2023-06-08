@@ -4,7 +4,7 @@ The script we made in the previous section will apply to an entire folder of ima
 
 ??? Question "Think about which line(s) of code we would need to change to process files in a different folder"
     ```javascript
-    folder = "XXX/XXX/XXX"  //This one :)
+    folder = "path/to/file"  //This one :)
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 

@@ -4,7 +4,7 @@ In our macro, you can see that we have repeated lines of code. A fundamental par
 
 But we can fix this by writing functions to do some of this processing that we know is going to happen on every image.
 
-For example, the code to select arrays from the ROI manager, make the intersection, and perform the measurement is repeat twice, with the only difference being which indices we select.
+For example, the code to select arrays from the ROI manager, make the intersection, and perform the measurement is repeated twice, with the only difference being which indices we select.
 
 ??? question "Write a function that performs this job, and replace your code with calls to this function"
     ```javascript hl_lines="1 2 3 4 5 35 36 37"
@@ -15,7 +15,7 @@ For example, the code to select arrays from the ROI manager, make the intersecti
     }
 
 
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");

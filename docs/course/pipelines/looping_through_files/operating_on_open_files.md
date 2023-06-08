@@ -14,7 +14,7 @@ Add this file to your script (think about where in the script this should go, an
 
 ??? example "Macro: Open, Save and Close Files"
     ```javascript
-    folder = "XXX/XXX/XXX"
+    folder = "path/to/file"
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 

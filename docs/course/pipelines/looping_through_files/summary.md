@@ -8,7 +8,7 @@ For now, you have the following code you can re-use in many other macros macros
 
 ```javascript title="Opening, Saving and Closing Images"
 
-folder = "XXX/XXX/XXX"
+folder = "path/to/file"
 file_list = getFileList(folder);
 number_of_files = file_list.length;
 

@@ -9,7 +9,7 @@ Let's do this a slightly different way, and clean up our code a little bit at th
 The ROI manager has a lot of useful macro commands attached to it, which can be found in the "built in macro functions" section of the imageJ docs (<https://imagej.nih.gov/ij/developer/macro/functions.html>). Let's delete all of the code highlighted below from our macro. Dont worry! We're going to replace it with something better. Deleting old code and re-writing it in a better way  is a key part of softwae development.
 
 ```javascript hl_lines="15 16 17 18 19 20 21 22 23"
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
@@ -36,7 +36,7 @@ The ROI manager has a lot of useful macro commands attached to it, which can be 
 
 ??? question "From the docs, find out how to add the ROIs to the manager in your script, and (importantly!) how to rename them. Modify your macro so that you add the ROIs. Also add the inverse of the nuclei ROI."
     ```javascript hl_lines="14 15 16 17 18"
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");

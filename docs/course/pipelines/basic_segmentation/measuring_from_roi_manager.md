@@ -21,7 +21,7 @@ In the ROI manager, select the `nuclei` and `bax` ROIs. Under the "More>" menu, 
 
 ??? question "Add lines to your macro to select the `nuclei` and `bax` ROIs from the ROI manager, and perform the addition and measurement"
     ```javascript hl_lines="28 29 30 31"
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
@@ -60,7 +60,7 @@ Note that this will only perform the measurements selected in the "Set Measureme
 
 ??? question "Do the same for the `nuclei_inverted` and `bax` ROIs"
     ```javascript hl_lines="32 33 34 35"
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
@@ -100,8 +100,8 @@ Note that this will only perform the measurements selected in the "Set Measureme
 As a final step, let's save our images and our ROIs in the same place so we 
 
 ??? question "BONUS: We are selecting using numbers here, which makes our code harder to read. Is there a way we could use the names of the ROIs to make an array? HINT: Look at the documentation for the `RoiManager.getIndex(name)` function. See if you can incorporate it into your code"
-     ```javascript hl_lines="32 33 34 35"
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+    ```javascript hl_lines="32 33 34 35"
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");

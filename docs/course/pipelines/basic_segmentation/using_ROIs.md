@@ -8,7 +8,7 @@ First, we need to convert our thresholded image to an ROI.
 
 ??? question "Add code to your macro to convert the thresholded image to an ROI and apply that to the thresholded bax image. HINT: Look in the "Edit->Selection menu""
     ```javascript hl_lines="13 14 15 16"
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
@@ -40,7 +40,7 @@ There are many ways of doing this, but an easy one is to measure the integrated 
 
 ??? question "Add code to your script that will calculate the number of non-zero pixels, using integrated density. HINT: You will have to access the measured value in the results table. How could we do this?"
     ```javascript hl_lines="17 18 19"
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
@@ -65,7 +65,7 @@ From this, we can see that the number of bax-positive pixels (~area) is 12,984
 
 ??? question "Use the same approach to calculate the area outside the nuclei. How could we measure everything EXCEPT what is in the nuclei? (there are at least three different ways of doing this!)"
     ```javascript hl_lines="20 21 22 23"
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
