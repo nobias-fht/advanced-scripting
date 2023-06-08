@@ -10,8 +10,8 @@ Well that's why we have automation. Let's do it!
 
 ??? question "Add to the end of your script code to duplicate the segmented image, threshold the first label (with a value of 1), convert this area to a masl and add it to the ROI manager (don't forget to close this thresholded image since we won't need it anymore). Hint: The code to set the threshold is `setThreshold(min_value, max_value);`"
     ```javascript hl_lines="7 8 9 10 11 12 13"
-    splitAndRenameChannels("C:/local_course/data/advanced_segmentation/control/siCntrl_1.tif");
-    classifier_path = "C:\\local_course\\nuclei_classifier.classifier";
+    splitAndRenameChannels("path/to/test/file");
+    classifier_path = "path/to/classifier";
     selectWindow("DAPI");
     run("Segment Image With Labkit", "segmenter_file=" + classifier_path + " use_gpu=false");
     run("Area Opening", "pixel=50");
@@ -37,8 +37,8 @@ Now we need to repeat this for each label in the image. You should at this point
         run("Close");
         }
 
-    splitAndRenameChannels("C:/local_course/data/advanced_segmentation/control/siCntrl_1.tif");
-    classifier_path = "C:\\local_course\\nuclei_classifier.classifier";
+    splitAndRenameChannels("path/to/test/file");
+    classifier_path = "path/to/classifier";
     selectWindow("DAPI");
     run("Segment Image With Labkit", "segmenter_file=" + classifier_path + " use_gpu=false");
     run("Area Opening", "pixel=50");
@@ -50,7 +50,8 @@ Finally, we need to wrap the `labelToROI()` in a for loop, to loop through all o
 
 ??? question "Make a for loop that loops through the label values, passing the iterator into the `labelToROI()` function"
     ```javascript
-    classifier_path = "C:\\local_course\\nuclei_classifier.classifier";
+    splitAndRenameChannels("path/to/test/file");
+    classifier_path = "path/to/classifier";
     selectWindow("DAPI");
     run("Segment Image With Labkit", "segmenter_file=" + classifier_path + " use_gpu=false");
     run("Area Opening", "pixel=50");

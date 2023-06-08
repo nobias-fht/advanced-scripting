@@ -83,11 +83,12 @@ The last thing we need to do is close all the files we have open (and the ROI ma
 
     1. See if you can think though this loop and understand what it is doing.
 
-    We've finished our macro! :fireworks:
+We've finished our macro! :fireworks:
 
-    There are certainly more things that we could add and clean up, but the core functionality is there and things appear to work.
-    If you are done early, you could consider the following exercises:
+There are certainly more things that we could add and clean up, but the core functionality is there and things appear to work.
+If you are done early, and would like a little extra challenge you could consider the following exercises: :flexed_biceps:
 
-    * Right now the files are saved as something like `siCntrl_1.tif_segmentation.tif`. The .tif in the middle is there because we used the oringinal file name as part of the string to create the new file name. Blech :vomit:. See if you can clean this up.
-
-
+* Right now the files are saved as something like `siCntrl_1.tif_segmentation.tif`. The `.tif` in the middle is there because we used the oringinal file name as part of the string to create the new file name. Blech :sick:. See if you can clean this up.
+* our code is completley uncommented! How will you remember what you did in 6 months! Comment your code where you think it will add explanation. It is often particularly useful to add a comment to functions to explain what they are, what the arguments should be, etc.
+* Right now we're assuming that the channels will always be in the same order (ie DAPI will be the first channel). Not very flexible! How can we make our script more generalizable? How could we, for example, include the actual names of the markers?
+* Maybe it would be nice to automatically calculate some summary statistics for our measurements. Mean, standard deviation, minimum and maximum, etc. If you want a real challenge, I'll just leave <a href="https://imagej.nih.gov/ij/macros/ExamplePlots.txt"> this </a> here

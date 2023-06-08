@@ -5,8 +5,8 @@ We've seen before how to measure ROIs, so nothing here should be particularly ne
 
 ??? loop through the ROI manager (remember how to select ROIs from the manager?) and measure the intesities of each of the two channels, then save the results table as the file name + 'channel_number_results'."
     ```javascript
-    splitAndRenameChannels("C:/local_course/data/advanced_segmentation/control/siCntrl_1.tif")
-    classifier_path = "C:\\local_course\\nuclei_classifier.classifier";
+    splitAndRenameChannels("path/to/test/file")
+    classifier_path = "path/to/classifier";
     selectWindow("DAPI");
     run("Segment Image With Labkit", "segmenter_file=" + classifier_path + " use_gpu=false");
     run("Area Opening", "pixel=50");
@@ -25,7 +25,6 @@ We've seen before how to measure ROIs, so nothing here should be particularly ne
         roiManager("select", i);
         run("Measure");
     }
-    saveAs("Results", "C:/local_course/Results_1.csv");
 
     selectWindow('marker_2');
     run("Clear Results"); //clear the results table first!
@@ -34,7 +33,6 @@ We've seen before how to measure ROIs, so nothing here should be particularly ne
         roiManager("select", i);
         run("Measure");
     }
-    saveAs("Results", "C:/local_course/Results_2.csv");
 
     ```
     
@@ -53,8 +51,8 @@ We've seen before how to measure ROIs, so nothing here should be particularly ne
         }
     }
 
-    splitAndRenameChannels("C:/local_course/data/advanced_segmentation/control/siCntrl_1.tif");
-    classifier_path = "C:\\local_course\\nuclei_classifier.classifier";
+    splitAndRenameChannels("path/to/test/file");
+    classifier_path = "path/to/classifier";
     selectWindow("DAPI");
     run("Segment Image With Labkit", "segmenter_file=" + classifier_path + " use_gpu=false");
     run("Area Opening", "pixel=50");

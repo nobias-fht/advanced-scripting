@@ -11,7 +11,7 @@ Let's start our macro by loading one image and taking a look at it.
 
 ??? question Write a macro that opens one of the files in the folder /data/advanced_segmentation/control, and splits it into its component channels
     ```javascript
-    open("C:/local_course/data/advanced_segmentation/control/siCntrl_1.tif");
+    open("path/to/test/file");
     run("Split Channels");
     ```
 
@@ -24,7 +24,7 @@ list = getList("window.titles");
 
 ??? question "Write code to iterate through this list and rename the windows in the following order: C1 = nuclei, C2 = marker_1, C3 = marker_2. Hint: You've seen something similar when we renamed the ROIs in the previous exercise!"
     ```javascript hl_lines="3 4 5 6 7 8"
-    open("C:/local_course/data/advanced_segmentation/control/siCntrl_1.tif");
+    open("path/to/test/file");
     run("Split Channels");
     list = getList("image.titles");
     names = newArray("DAPI", "marker_1", "marker_2");  //(1)!
@@ -51,7 +51,7 @@ Hmmmm this looks like a nice, self-contained bit of code. Maybe we should make i
             rename(names[i]);
     }
     }
-    splitAndRenameChannels("C:/local_course/data/advanced_segmentation/control/siCntrl_1.tif")
+    splitAndRenameChannels("path/to/test/file")
     ```
 
 Next, we will apply our pixel classifier to the nuclear image!
