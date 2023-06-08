@@ -20,7 +20,7 @@ Add this file to your script (think about where in the script this should go, an
 
      for (i=0; i<number_of_files; i++)
         {
-            file_path = folder + "file_list[0];
+            file_path = folder + "file_list[i];
             open(file_path);
             run("Gaussian Blur...", "sigma=2");
         }

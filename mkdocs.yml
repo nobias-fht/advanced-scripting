@@ -71,6 +71,8 @@ nav:
           - course/pipelines/advanced_segmentation/pixel_classification_with_labkit.md
           - course/pipelines/advanced_segmentation/instances_to_rois.md
           - course/pipelines/advanced_segmentation/measuring_rois.md
+          - course/pipelines/advanced_segmentation/adding_file_looping.md
+          - course/pipelines/advanced_segmentation/saving_and_closing_files.md
 
 
 

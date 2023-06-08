@@ -10,7 +10,7 @@ The script we made in the previous section will apply to an entire folder of ima
 
     for (i=0; i<number_of_files; i++)
         {
-            file_path = folder + "file_list[0];
+            file_path = folder + "file_list[i];
             open(file_path);
             run("Gaussian Blur...", "sigma=2");
             save_path = folder + "normal_" + i + "_gaussian_blur_sigma2.tif";

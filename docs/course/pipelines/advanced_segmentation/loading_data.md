@@ -15,7 +15,7 @@ Let's start our macro by loading one image and taking a look at it.
     run("Split Channels");
     ```
 
-While we know that C1 is the nuclei, and C2 and C3 are the markers, each will have a different suffix reflecting the file name. This will make it difficult later on, so let's rename the files for simplicity, like we did before. Unfortunatley, we can't just select the windows by name. We have to be a little more clever!
+While we know that C1 is the nuclei, and C2 and C3 are the markers, each will have a different suffix reflecting the file name. This will make it difficult later on, so let's rename the files for simplicity, like we did before. Unfortunately, we can't just select the windows by name. We have to be a little more clever!
 
 First, we need to get a list of all the open windows. For this we can use the following function:
 ```javascript title="getting a list of open windows"

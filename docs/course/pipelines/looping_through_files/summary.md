@@ -14,12 +14,12 @@ number_of_files = file_list.length;
 
 for (i=0; i<number_of_files; i++)
     {
-        file_path = folder + file_list[0];
+        file_path = folder + file_list[i];
         open(file_path);
 
         // do some image processing here :)
 
-        save_path = "path/to/file/normal_" + i + "_gaussian_blur_sigma2.tif";
+        save_path = "path/to/file/";
         saveAs("Tiff", save_path);
         run("Close");
     }

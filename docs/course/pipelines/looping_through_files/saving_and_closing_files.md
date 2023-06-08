@@ -22,7 +22,7 @@ Similarly to how we build a file_path for the input image to pass into the 'open
 
     for (i=0; i<number_of_files; i++)
         {
-            file_path = folder + "file_list[0];
+            file_path = folder + "file_list[i];
             open(file_path);
             run("Gaussian Blur...", "sigma=2");
             save_path = folder + "/normal_" + i + "_gaussian_blur_sigma2.tif";
