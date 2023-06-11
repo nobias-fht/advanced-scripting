@@ -12,7 +12,7 @@ manually edit the code. :chart_with_downwards_trend:
 ??? Question "Which line(s) of code do would need to change to process a different folder?"
 
     ```javascript hl_lines="1"
-    folder = "XXX/XXX/XXX";  // (1)!
+    folder = "path/to/file";  // (1)!
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 

@@ -28,7 +28,7 @@ difference being which indicies we select.
         run("Measure");
     }
 
-    open("path/to/data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");

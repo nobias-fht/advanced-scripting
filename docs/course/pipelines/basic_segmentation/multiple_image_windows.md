@@ -27,7 +27,7 @@ Let's fix that. :wrench:
 ??? example "Add lines to your script that renames `C1-bax_DAPI_overlay.tif` to `nuclei` and `C2-bax_DAPI_overlay.tif` to `bax`."
 
     ```javascript hl_lines="3 4 5 6"
-    open("path/to/data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei"); // (1)!

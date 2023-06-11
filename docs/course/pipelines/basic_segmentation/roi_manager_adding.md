@@ -24,7 +24,7 @@ to replace it with something better. Deleting old code and re-writing it in a
 better way is a key part of softwae development.
 
 ```javascript hl_lines="15 16 17 18 19 20 21 22 23"
-    open("path/to/data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
@@ -52,7 +52,7 @@ better way is a key part of softwae development.
 ??? example "From the docs, find out how to add the ROIs to the manager in your script, and (importantly!) how to rename them. Modify your macro so that you add the ROIs. Also add the inverse of the nuclei ROI."
 
     ```javascript hl_lines="15 16 17 18 19 20"
-    open("path/to/data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");

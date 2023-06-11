@@ -38,7 +38,7 @@ Let's include that in our code! :wrench:
 ??? example "Add lines to your macro to select the `nuclei` and `bax` ROIs from the ROI manager, and peform the addition and measurement"
 
     ```javascript hl_lines="28 29 30 31"
-    open("path/to/data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
@@ -83,7 +83,7 @@ Measurements" window in ImageJ.
 ??? example "Do the same for the `nuclei_inverted` and `bax` ROIs"
 
     ```javascript hl_lines="32 33 34 35"
-    open("path/to/data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
@@ -128,7 +128,7 @@ easily compare them. :floppy_disk:
 ??? example "BONUS: We are selecting using numbers here, which makes our code harder to read. Is there a way we could use the names of the ROIs to make an array? *Hint*: Look at the documentation of the `RoiManager.getIndex(name)` function. See if you can incorporate it into your code."
 
     ```javascript hl_lines="32 33 34 35"
-    open("path/to/data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");

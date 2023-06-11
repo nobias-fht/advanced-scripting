@@ -22,7 +22,7 @@ and why. :thinking:
 ??? example "Macro: Open, Save and Close Files"
 
     ```javascript hl_lines="8"
-    folder = "XXX/XXX/XXX"; // <= replace with your (OS-agnostic) folder path
+    folder = "path/to/file"
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 
@@ -31,6 +31,7 @@ and why. :thinking:
       open(file_path);
       run("Gaussian Blur...", "sigma=2");
     }
+
     ```
 
 Now if you run this script it will open the images, and once each file is

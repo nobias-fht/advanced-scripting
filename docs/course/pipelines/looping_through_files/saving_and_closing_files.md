@@ -34,7 +34,7 @@ the filename relects what we have done to it (something along the lines of
 ??? example "Macro: Open, Save and Close Files"
 
     ```javascript hl_lines="9 10"
-    folder = "XXX/XXX/XXX"; // <= replace with your (OS-agnostic) folder path
+    folder = "path/to/file"
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 
@@ -57,7 +57,7 @@ command to do this and add it to the last line of your macro.
 ??? example "Macro: Open, Save and Close Files"
 
     ```javascript hl_lines="11"
-    folder = "XXX/XXX/XXX"; // <= replace with your (OS-agnostic) folder path
+    folder = "path/to/file"
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 
@@ -82,7 +82,7 @@ Take a moment to look through the above code.
      * License: BSD 3-Clause
      */
     // Folder in which the images are
-    folder = "XXX/XXX/XXX"; // <= replace with your (OS-agnostic) folder path
+    folder = "path/to/file"
 
     // Get the list of files in the folder
     file_list = getFileList(folder);

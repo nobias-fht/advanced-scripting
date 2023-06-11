@@ -66,6 +66,16 @@ nav:
           - course/pipelines/basic_segmentation/using_functions.md
       - Advanced Segmentation:
           - course/pipelines/advanced_segmentation/introduction.md
+          - course/pipelines/advanced_segmentation/an_introduction_to_labkit.md
+          - course/pipelines/advanced_segmentation/loading_data.md
+          - course/pipelines/advanced_segmentation/pixel_classification_with_labkit.md
+          - course/pipelines/advanced_segmentation/instances_to_rois.md
+          - course/pipelines/advanced_segmentation/measuring_rois.md
+          - course/pipelines/advanced_segmentation/adding_file_looping.md
+          - course/pipelines/advanced_segmentation/saving_and_closing_files.md
+
+
+
   - demo.md
 
 theme:

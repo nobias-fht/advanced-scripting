@@ -8,7 +8,7 @@ tags:
 `Loops` are a way of telling the computer that we would like to perform an
 operation more than once. Let's take a look at how we write a loop in
 `ImageJ Macro`. It might seem complicated at first, but it's actually simple and
-powerful, and will be essential for `ImageJ Macro` programming. :fire:
+powerful, and will be essential for `ImageJ Macro` programming. So much of automated image analysis is telling the computer "Repeat this tedious task 500 times so that I don't have to" :fire:
 
 Let's dive in! :diving_mask:
 
@@ -60,7 +60,7 @@ while (condition){
 
 This can be very useful to continue executing a block of code until a condition
 is met. For example, we could continue eroding a binary image until there are no
-objects greater that 1000 pixels in size, for example.
+objects greater than 1000 pixels in size, for example.
 
 A simpler example would be the following:
 

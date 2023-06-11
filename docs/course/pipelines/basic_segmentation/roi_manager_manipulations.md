@@ -63,7 +63,7 @@ ROI manager skills!) :nerd:
 ??? example "Before we do, let's add the renaming code to our script"
 
     ```javascript hl_lines="22 23 24 25 26"
-    open("path/to/data/bax_DAPI_overlay.tif");
+    open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
