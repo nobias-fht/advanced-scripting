@@ -26,9 +26,9 @@ Try appending a few different things to the file. :gear:
 ??? question "What happens when we try to `append` a string to a file that does not exist?"
     Just like the `print` command we saw earlier, ImageJ will create the file.
 
-??? question "Update your script so that it uses `File.append` to write our coordnates to a file. Make sure that it prints in the form `x-coordinate, y-coordinate` for each pair of coordinates"
+??? example "Update your script so that it uses `File.append` to write our coordnates to a file. Make sure that it prints in the form `x-coordinate, y-coordinate` for each pair of coordinates"
 
-    ```javascript
+    ```javascript hl_lines="2 4"
     macro "get_mouse_xy [g]" {
       file_name = "path/to/file.txt";
       getCursorLoc(x, y, z, modifiers);
@@ -45,9 +45,9 @@ delimited by the `,` symbol. :clipboard:
 
 ## Bonus exercise
 
-??? question "Add a header to the columns in our file. Hint: We will need to do something just after our file is created for the first time. How can we know if our file has just been created? Take a look at the documentation for the `File` functions and see if something might work?"
+??? example "Add a header to the columns in our file. Hint: We will need to do something just after our file is created for the first time. How can we know if our file has just been created? Take a look at the documentation for the `File` functions and see if something might work?"
 
-    ```javascript
+    ```javascript hl_lines="4 5 6 7"
     macro "get_mouse_xy [g]" {
       file_name = "path/test_track.txt";
 

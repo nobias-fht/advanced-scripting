@@ -1,27 +1,44 @@
-#Measurements using the ROI manager
+---
+tags:
+  - pipeline
+  - rois
+  - measurement
+---
+# Measurements using the ROI manager
 
-Now that we have our ROIs, we need to make the measurements. However these measurements are a little more complicated than just applying the ROI and making the measurement.
+Now that we have our ROIs, we need to make the measurements. However these
+measurements are a little more complicated than just applying the ROI and making
+the measurement. :fire:
 
 We need to do two things:
 
-1) measure the area and average intensity of the bax signal inside the nucleus
+1) measure the area and average intensity of the bax signal **inside** the nucleus
 
-2) measure the area and average intensity of the bax signal outside the nucleus
+2) measure the area and average intensity of the bax signal **outside** the nucleus
 
-For these, we need to find the intersection of the nuclei and bax ROIs. Thankfully, the ROI manager give us an easy way to do this!
+For these, we need to find the intersection of the nuclei and bax ROIs.
+Thankfully, the ROI manager give us an easy way to do this! :rocket:
 
-In the ROI manager, select the `nuclei` and `bax` ROIs. Under the "More>" menu, select the button for `AND`. This will give us the intersection of the two ROIs. You will notice now that only the bax signal that is inside the nucleus is highlighted. We are almost there! But, how to do this in a script?
+In the ROI manager, select the `nuclei` and `bax` ROIs. Under the `More>` menu,
+select the button for `AND`. This will give us the intersection of the two ROIs.
+You will notice now that only the bax signal that is inside the nucleus is
+highlighted. We are almost there! But, how to do this in a script? :thinking:
 
 ??? question "Look at the macro recorder while we select two ROIs. What arguments are passed into the "Select" function?"
+
     ```javascript
     roiManager("Select", newArray(0,2));
     ```
-    In this case, we pass in an `array` of the indicies we would like to select (in this case, 0 and 2).
 
+    In this case, we pass in an `array` of the indicies we would like to select
+    (in this case, 0 and 2).
 
-??? question "Add lines to your macro to select the `nuclei` and `bax` ROIs from the ROI manager, and peform the addition and measurement"
+Let's include that in our code! :wrench:
+
+??? example "Add lines to your macro to select the `nuclei` and `bax` ROIs from the ROI manager, and peform the addition and measurement"
+
     ```javascript hl_lines="28 29 30 31"
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+    open("path/to/data/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
@@ -41,26 +58,32 @@ In the ROI manager, select the `nuclei` and `bax` ROIs. Under the "More>" menu, 
     selectWindow('bax_thresholded');
     run("Create Selection");
     roiManager("Add");
-    
+
     name_array = newArray("nuclei", "nuclei_inverted", "bax")
     for (i=0; i<roiManager("count"); i++) {
         roiManager("Select", i);
         roiManager("rename", name_array[i]);
     }
-    
+
     selectWindow("bax");
     roiManager("Select", newArray(0,2));
     roiManager("AND");
     run("Measure");
     ```
 
-Note that this will only perform the measurements selected in the "Set Measurements" window in ImageJ.
+Note that this will only perform the measurements selected in the "Set
+Measurements" window in ImageJ.
 
-!!! tip "if you want to make sure that your script will perform certain measurements, you can set them from the script using `run("Set Measurements...", "area mean redirect=None decimal=3");`. It is often a good idea to add this to scripts"
+!!! tip
+    If you want to make sure that your script will perform certain measurements,
+    you can set them from the script using
+    `run("Set Measurements...", "area mean redirect=None decimal=3");`. It is
+    often a good idea to add this to scripts.
 
-??? question "Do the same for the `nuclei_inverted` and `bax` ROIs"
+??? example "Do the same for the `nuclei_inverted` and `bax` ROIs"
+
     ```javascript hl_lines="32 33 34 35"
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+    open("path/to/data/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
@@ -80,13 +103,13 @@ Note that this will only perform the measurements selected in the "Set Measureme
     selectWindow('bax_thresholded');
     run("Create Selection");
     roiManager("Add");
-    
+
     name_array = newArray("nuclei", "nuclei_inverted", "bax")
     for (i=0; i<roiManager("count"); i++) {
         roiManager("Select", i);
         roiManager("rename", name_array[i]);
     }
-    
+
     selectWindow("bax");
     roiManager("Select", newArray(0,2));
     roiManager("AND");
@@ -97,11 +120,15 @@ Note that this will only perform the measurements selected in the "Set Measureme
     run("Measure");
     ```
 
-As a final step, let's save our images and our ROIs in the same place so we 
+As a final step, let's save our images and our ROIs in the same place so we can
+easily compare them. :floppy_disk:
 
-??? question "BONUS: We are selecting using numbers here, which makes our code harder to read. Is there a way we could use the names of the ROIs to make an array? HINT: Look at the documenation for the `RoiManager.getIndex(name)` function. See if you can incorporate it into your code"
-     ```javascript hl_lines="32 33 34 35"
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+## Bonus step
+
+??? example "BONUS: We are selecting using numbers here, which makes our code harder to read. Is there a way we could use the names of the ROIs to make an array? *Hint*: Look at the documentation of the `RoiManager.getIndex(name)` function. See if you can incorporate it into your code."
+
+    ```javascript hl_lines="32 33 34 35"
+    open("path/to/data/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
@@ -121,13 +148,13 @@ As a final step, let's save our images and our ROIs in the same place so we
     selectWindow('bax_thresholded');
     run("Create Selection");
     roiManager("Add");
-    
+
     name_array = newArray("nuclei", "nuclei_inverted", "bax")
     for (i=0; i<roiManager("count"); i++) {
         roiManager("Select", i);
         roiManager("rename", name_array[i]);
     }
-    
+
     selectWindow("bax");
     roiManager("Select", newArray(RoiManager.getIndex("nuclei"),RoiManager.getIndex("bax")));
     roiManager("AND");
@@ -137,4 +164,3 @@ As a final step, let's save our images and our ROIs in the same place so we
     roiManager("AND");
     run("Measure");
     ```
-

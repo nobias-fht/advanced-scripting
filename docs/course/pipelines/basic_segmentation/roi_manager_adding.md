@@ -1,15 +1,30 @@
-# Measuring Intensity and the using ROI manager
+---
+tags:
+  - pipeline
+  - measurements
+  - rois
+---
+# Measuring Intensity and using ROI manager
 
-We can use our ROIs to measure not just the integrated density, but the average intensity of the bax signal.
+We can use our ROIs to measure not just the integrated density, but the
+average intensity of the bax signal. :fire:
 
-To do this, however, we need to measure only the average in intensity of the signal in the ROI defined by the bax segmentation, not the nuclei. How could we do this?
+To do this, however, we need to measure the average intensity of the signal in
+the ROI defined by the bax segmentation only, not the nuclei. How could we do
+this? :thinking:
 
-Let's do this a slightly different way, and clean up our code a little bit at the same time, using the ROI manager.
+Let's do this a slightly different way, and clean up our code a little bit at
+the same time, using the ROI manager. :rocket:
 
-The ROI manager has a lot of useful macro commands attached to it, which can be found in the "built in macro functions" section of the imageJ docs (<https://imagej.nih.gov/ij/developer/macro/functions.html>). Let's delete all of the code highlighted below from our macro. Dont worry! We're going to replace it with something better. Deleting old code and re-writing it in a better way  is a key part of softwae development.
+The ROI manager has a lot of useful macro commands attached to it, which can be
+found in the "built in macro functions" section of the
+[ImageJ docs](https://imagej.nih.gov/ij/developer/macro/functions.html). Let's
+delete all of the code highlighted below from our macro. Dont worry! We're going
+to replace it with something better. Deleting old code and re-writing it in a
+better way is a key part of softwae development.
 
 ```javascript hl_lines="15 16 17 18 19 20 21 22 23"
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+    open("path/to/data/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
@@ -34,9 +49,10 @@ The ROI manager has a lot of useful macro commands attached to it, which can be 
     print("the number of bax-positive pixels outside the nuclei is " + int_den_outside / 255);
 ```
 
-??? question "From the docs, find out how to add the ROIs to the manager in your script, and (importantly!) how to rename them. Modify your macro so that you add the ROIs. Also add the inverse of the nuclei ROI."
-    ```javascript hl_lines="14 15 16 17 18"
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+??? example "From the docs, find out how to add the ROIs to the manager in your script, and (importantly!) how to rename them. Modify your macro so that you add the ROIs. Also add the inverse of the nuclei ROI."
+
+    ```javascript hl_lines="15 16 17 18 19 20"
+    open("path/to/data/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
@@ -56,6 +72,6 @@ The ROI manager has a lot of useful macro commands attached to it, which can be 
     selectWindow('bax_thresholded');
     run("Create Selection");
     roiManager("Add");
-```
+    ```
 
-While we're here, let's add code to add the inverse of the nuclei image
+While we're here, let's add code to add the inverse of the nuclei image! :rocket:

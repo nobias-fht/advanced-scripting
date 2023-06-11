@@ -11,7 +11,7 @@ make a simple manual tracking macro. It will record the xy position of an object
 that is under the mouse when the hotkey `g` is pressed, and advance to the next
 frame in the stack for the next measurement. :muscle:
 
-??? question "Modify the previous macro to advance one timepoint every run"
+??? example "Modify the previous macro to advance one timepoint every run"
 
     ```javascript hl_lines="5 6 7"
     macro "get_mouse_xy [g]" {

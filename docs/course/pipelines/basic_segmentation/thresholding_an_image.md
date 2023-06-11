@@ -1,12 +1,21 @@
-#Image Thresholding
+---
+tags:
+  - pipeline
+  - thresholding
+---
+# Image Thresholding
 
-We want to apply a threshold to this image. We could just pick a number that works well for this image but remember, we're trying to make a script that we could potentially apply to many images. If we select one number that works with this image, it might not work as well with other images.
+We want to apply a threshold to this image. We could just pick a number that
+works well for this image but remember, we're trying to make a script that we
+could potentially apply to many images. If we select one number that works with
+this image, it might not work as well with other images. :thinking:
 
-A better approach is to select an autothreshold method.
+A better approach is to select an autothreshold method. :rocket:
 
-??? question "Add to your script steps to threshold both images using ImageJ's autothreshold feature. Hint: You might want to make copies of these files before you threshold them, so that we have the raw images to work with later!"
-    ```javascript
-    open("C:/Users/damian.dalle/OneDrive - Htechnopole/Desktop/course_test_data/bax_DAPI_overlay.tif");
+??? example "Add to your script steps to threshold both images using ImageJ's autothreshold feature. *Hint*: You might want to make copies of these files before you threshold them, so that we have the raw images to work with later!"
+
+    ```javascript hl_lines="7 8 9 10 11 12"
+    open("path/to/data/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
     rename("nuclei");
@@ -20,9 +29,10 @@ A better approach is to select an autothreshold method.
     run("Auto Threshold", "method=Default white");
     ```
 
-    1. The 'default' method works pretty well here, but feel free to try some other methods and see if you can find a better one!
+    1. The 'default' method works pretty well here, but feel free to try some
+    other methods and see if you can find a better one!
 
-Oof. our script is getting pretty long, and we haven't even started the analysis. 
+Oof. our script is getting pretty long, and we haven't even started the analysis. :scream:
 
 ??? question "How could we make our script more easy to read?"
-    Let's use Functions to try to replace some of that duplicated code.
+    Let's use Functions to try to replace some of that duplicated code. :muscle:
