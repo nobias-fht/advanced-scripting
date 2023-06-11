@@ -15,4 +15,14 @@ Macro` language, as well as some basic concepts in programmimg.
     We interact with a computer by using specific commands, each of which gives
     the computer one or more specific instructions. :pencil:
 
+!!! info "Learning Objectives"
+
+    * Printing to the log
+    * Using variables
+    * Creating arrays
+    * Manipulating strings
+    * Using loops
+    * Using conditionals
+    * Debugging a macro
+
 Let's write our first program -- Ready? On your mark, get set, go! :rocket:

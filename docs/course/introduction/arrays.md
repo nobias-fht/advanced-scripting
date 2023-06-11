@@ -27,6 +27,10 @@ an array of words, for example:
     means that we cannot represent images as arrays (as opposed to most
     programming languages). :thumbs_down:
 
+    Images are, however, represented as...
+
+    ... `Image`. :tada:
+
 Unfortunately, in ImageJ macro, we cannot simply initialize an array as we
 would with any other variable. Instead, to initialize an array in
 `ImageJ Macro`, we use the following syntax:
