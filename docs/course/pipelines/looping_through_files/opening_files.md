@@ -47,14 +47,14 @@ open("path/to/file");
 
 What should we put for "path/to/file"? This is the `path` of a file, which is
 like an address to where the file lives on the computer. In this case we know
-the path of our files is `XXXX`. We need to pass in as an argument to the `open`
-function a concatenation of this path (a string) and the file name (another
-string).
+the path of our files is `path/to/tile`. We need to pass in as an argument to
+the `open` function a concatenation of this path (a string) and the file name
+(another string).
 
 ??? question "How can we generate the path?"
 
     ```javascript
-    folder = "XXX/XXX/XXX"; // <= replace with your (OS-agnostic) folder path
+    folder = "path/to/file";
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 
@@ -72,7 +72,7 @@ print the path of the file, use `open` to open the file.
 ??? example "Macro: Open, Save and Close Files"
 
     ```javascript hl_lines="6 7"
-    folder = "XXX/XXX/XXX/"; // <= replace with your (OS-agnostic) folder path
+    folder = "path/to/file";
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 

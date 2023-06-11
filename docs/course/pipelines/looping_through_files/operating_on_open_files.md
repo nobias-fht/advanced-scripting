@@ -22,7 +22,7 @@ and why. :thinking:
 ??? example "Macro: Open, Save and Close Files"
 
     ```javascript hl_lines="8"
-    folder = "path/to/file"
+    folder = "path/to/file";
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 

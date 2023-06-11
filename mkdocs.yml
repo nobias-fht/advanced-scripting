@@ -4,6 +4,7 @@ nav:
   - Home:
       - index.md
   - course/installation/installing_fiji.md
+  - course/installation/download_data.md
   - course/installation/starting_macro.md
   - Introduction:
       - course/introduction/index.md
@@ -65,7 +66,7 @@ nav:
           - course/pipelines/basic_segmentation/measuring_from_roi_manager.md
           - course/pipelines/basic_segmentation/using_functions.md
       - Advanced Segmentation:
-          - course/pipelines/advanced_segmentation/introduction.md
+          - course/pipelines/advanced_segmentation/index.md
           - course/pipelines/advanced_segmentation/an_introduction_to_labkit.md
           - course/pipelines/advanced_segmentation/loading_data.md
           - course/pipelines/advanced_segmentation/pixel_classification_with_labkit.md
@@ -73,9 +74,7 @@ nav:
           - course/pipelines/advanced_segmentation/measuring_rois.md
           - course/pipelines/advanced_segmentation/adding_file_looping.md
           - course/pipelines/advanced_segmentation/saving_and_closing_files.md
-
-
-
+  - course/conclusion.md
   - demo.md
 
 theme:

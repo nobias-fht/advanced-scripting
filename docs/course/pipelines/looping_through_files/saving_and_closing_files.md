@@ -82,7 +82,7 @@ Take a moment to look through the above code.
      * License: BSD 3-Clause
      */
     // Folder in which the images are
-    folder = "path/to/file"
+    folder = "path/to/file";
 
     // Get the list of files in the folder
     file_list = getFileList(folder);

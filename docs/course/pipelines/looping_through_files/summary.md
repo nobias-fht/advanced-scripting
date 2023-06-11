@@ -16,14 +16,14 @@ can begin to appreciate the power of ImageJ macros. :muscle:
 For now, you have the following code you can re-use in many other macros macros.
 
 ```javascript title="Opening, Saving and Closing Images"
-folder = "path/to/file"
+folder = "path/to/file";
 file_list = getFileList(folder);
 number_of_files = file_list.length;
 
 for (i=0; i<number_of_files; i++) {
     file_path = folder + File.separator + file_list[0];
     open(file_path);
-    
+
     // do some image processing here :)
 
     save_path = "path/to/file/fileName_" + i + "_operation.tif";

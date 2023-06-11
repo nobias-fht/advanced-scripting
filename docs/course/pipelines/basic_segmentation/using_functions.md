@@ -16,8 +16,8 @@ But we can fix this by writing functions to do some of this processing that we
 know is going to happen on every image. :wrench:
 
 For example, the code to select arrays from the ROI manager, make the
-intersection, and peform the measurement is repeat twice, with the only
-difference being which indicies we select.
+intersection, and perform the measurement is repeat twice, with the only
+difference being which indices we select.
 
 ??? example "Write a function that performs this job, and replace your code with calls to this function"
 
@@ -57,8 +57,7 @@ difference being which indicies we select.
 
     selectWindow("bax");
     measureIntersect("nuclei", "bax");
-   measureIntersect("nuclei_inverted", "bax");
-
+    measureIntersect("nuclei_inverted", "bax");
     ```
 
 Now, the last three lines of our script look much easier to understand! :tada:

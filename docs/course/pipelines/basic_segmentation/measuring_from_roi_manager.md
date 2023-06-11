@@ -30,12 +30,12 @@ highlighted. We are almost there! But, how to do this in a script? :thinking:
     roiManager("Select", newArray(0,2));
     ```
 
-    In this case, we pass in an `array` of the indicies we would like to select
+    In this case, we pass in an `array` of the indices we would like to select
     (in this case, 0 and 2).
 
 Let's include that in our code! :wrench:
 
-??? example "Add lines to your macro to select the `nuclei` and `bax` ROIs from the ROI manager, and peform the addition and measurement"
+??? example "Add lines to your macro to select the `nuclei` and `bax` ROIs from the ROI manager, and perform the addition and measurement"
 
     ```javascript hl_lines="28 29 30 31"
     open("path/to/file/bax_DAPI_overlay.tif");

@@ -9,7 +9,7 @@ First, we need to get a list of all the files in the input folder so that we can
 process them one at a time. For this, we will use the function `getFileList()`.
 
 ```javascript
-folder = "XXX/XXX/XXX" // (1)!
+folder = "path/to/file";
 file_list = getFileList(folder);
 ```
 
@@ -28,9 +28,9 @@ file_list = getFileList(folder);
 The syntax here should be familiar to you, but let's think about what we're
 doing here and refresh our memory. We're using a function, `getFileList`, and
 passing in the value of the folder in which we have our images stored (in this
-case, `XXX`, which we are storing in the variable `folder`). Under the hood,
-this function is going to look at this folder, and return an array of files that
-are contained within it. :thinking:
+case, `path/to/file`, which we are storing in the variable `folder`). Under the
+hood, this function is going to look at this folder, and return an array of
+files that are contained within it. :thinking:
 
 We can then store it in a variable, in order to use it later in our script. :wink:
 
