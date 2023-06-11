@@ -41,8 +41,7 @@ tags:
 
     Play with them and picture what they can be useful for. :thinking:
 
-    Why do some of these return `0` or `1`?
-
+??? question "In the above section, Why do some of the operations return `0` or `1`?"
     Answer: In computer programming, a value of `1` is often used to signify `True` and
     a value of `0` to signify `False`. In these cases, the computer is just
     telling us whether the question we asked it is `True` or `False`.
