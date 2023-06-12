@@ -15,7 +15,7 @@ small treasure hunt to see what you are really worth! :pirate_flag:
 
         - [ImageJ macro documentation](https://imagej.nih.gov/ij/developer/macro/macros.html) :anchor:
         - [Built-in macro functions](https://wsr.imagej.net/developer/macro/functions.html) :wrapped_gift:
-        - [Image.sc forum](https://forum.image.sc/t/macro-to-iterate-through-frames-in-a-time-lapse/58147) :light_bulb:
+        - [Image.sc forum](https://forum.image.sc) :light_bulb:
 
 ## First clue :anchor:
 
