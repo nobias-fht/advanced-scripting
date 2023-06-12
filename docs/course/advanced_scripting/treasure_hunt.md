@@ -25,7 +25,7 @@ small treasure hunt to see what you are really worth! :pirate_flag:
 ## Second clue :wrapped_gift:
 
 !!! Question
-        Find out the macro function used compute the square root of a number.
+        Find out the macro function used to compute the square root of a number.
 
 ## Third clue :light_bulb:
 
