@@ -11,9 +11,10 @@ The purpose of this tutorial is to apply a simple filter to each of these files.
     The data is from [Kromp et al, 2020, "An annotated fluorescence image dataset for training nuclear segmentation methods"](https://www.nature.com/articles/s41597-020-00608-w).
 
 !!! info "Learning Objectives"
-    *Learn how to get a list of files in a folder :card_index_dividers:
+
+    * Learn how to get a list of files in a folder :card_index_dividers:
     * Learn how to open each file individually :open_file_folder:
-    *Learn how to manipulate files once opened by a script :scroll:
+    * Learn how to manipulate files once opened by a script :scroll:
     * Learn how to save and close files :floppy_disk:
 
 ??? note "Other approaches"
