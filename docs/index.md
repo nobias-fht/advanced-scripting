@@ -11,18 +11,18 @@ three-day course given at the Human Technopole. :open_book:
 
 The course assumes familiarity with Fiji and no coding experience.
 
-### First day
+### First day (09:30 - 17:00)
 
 - Warm welcome :sun:
 - Introduction to scripting :tropical_drink:
 - Advanced scripting :fire:
 
-### Second day
+### Second day (09:30 - 17:00)
 
 - Refresher of the first day :zzz:
 - Building pipelines :rocket:
 
-### (Optional) Third day
+### (Optional) Third day (10:00 - 16:00)
 
 - Motivational speech :microphone:
 - Work on your own data :muscle:
