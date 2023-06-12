@@ -9,7 +9,7 @@ tags:
 Our list is an array, and we have seen earlier how arrays are indexed. Let's
 first check how we could access one file in this list.
 
- Question "How can we print the fifth element of `file_list`?"
+??? Question "How can we print the fifth element of `file_list`?"
 
     ```javascript
     print(file_list[4])
