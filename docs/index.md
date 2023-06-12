@@ -29,7 +29,7 @@ The course assumes familiarity with Fiji and no coding experience.
 
 Are you ready? Let's learn some stuff. :woman_climbing:
 
-!!!Note
+!!! Note
     As with any programming language it is more important to understand the
     logic and the vocabulary than to know everything by heart. First and
     foremost, know where to find answers:
@@ -38,3 +38,7 @@ Are you ready? Let's learn some stuff. :woman_climbing:
     - [Macro language documentation](https://imagej.nih.gov/ij/developer/macro/macros.html)
     - [Image.sc forum](https://image.sc)
     - [A great cheat sheet](https://www.biodip.de/w/images/0/00/ImageJ_macro_cheatsheet.pdf)
+
+!!! Note
+    All the scripts are available in
+    [this repository](https://github.com/nobias-fht/advanced-scripting-scripts).
