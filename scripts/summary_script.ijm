@@ -21,8 +21,10 @@
  #@ File (label = "Ouput directory", style = "directory") output
 
  // Make sure everythin is closed before
- //roiManager("deselect");
- //roiManager("delete");
+ //if (roiManager("count") > 0){
+ //	roiManager("deselect");
+ //	roiManager("delete");
+ //}
  //run("Clear Results");
  close("*");
 
