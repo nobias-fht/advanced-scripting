@@ -10,7 +10,7 @@ macro, we use the `run` command, passing in our segmenter. :exploding_head:
 
 ```javascript title="Segmenting images with labkit"
 classifier_path = "path/to/classifier.classifier";
-run("Segment Image With Labkit", "segmenter_file=" + classifier_path use_gpu=false");
+run("Segment Image With Labkit", "segmenter_file=" + classifier_path + " use_gpu=false");
 ```
 
 ??? example "Add code to run the pixel classification step on your DAPI image (note that from here, to save space, we will not include the functions in every script, since we assume you have them in your script file)"
