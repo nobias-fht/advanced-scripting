@@ -34,7 +34,7 @@ the filename relects what we have done to it (something along the lines of
 ??? example "Macro: Open, Save and Close Files"
 
     ```javascript hl_lines="9 10"
-    folder = "path/to/file"
+    folder = "path/to/file";
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 
@@ -57,7 +57,7 @@ command to do this and add it to the last line of your macro.
 ??? example "Macro: Open, Save and Close Files"
 
     ```javascript hl_lines="11"
-    folder = "path/to/file"
+    folder = "path/to/file";
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 

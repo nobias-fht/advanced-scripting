@@ -123,7 +123,7 @@ Measurements" window in ImageJ.
 As a final step, let's save our images and our ROIs in the same place so we can
 easily compare them. :floppy_disk:
 
-## Bonus step
+## Bonus steps
 
 ??? example "BONUS: We are selecting using numbers here, which makes our code harder to read. Is there a way we could use the names of the ROIs to make an array? *Hint*: Look at the documentation of the `RoiManager.getIndex(name)` function. See if you can incorporate it into your code."
 
@@ -164,3 +164,7 @@ easily compare them. :floppy_disk:
     roiManager("AND");
     run("Measure");
     ```
+
+!!! Question
+    Do you see some hard-coded things in there? For instance names? These could
+    be made into variables.

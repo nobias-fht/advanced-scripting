@@ -13,7 +13,7 @@ making the appropriate changes! :wrench:
 Remember, the code looks like this:
 
 ```javascript title="Opening, Saving and Closing Images"
-folder = "XXX/XXX/XXX"
+folder = "path/to/folder";
 file_list = getFileList(folder);
 number_of_files = file_list.length;
 

@@ -23,7 +23,7 @@ Let's start by putting in our loop functionality from the previous section:
 ??? example "Macro: Open, Save and Close Files"
 
     ```javascript
-    folder = "XXX/XXX/XXX" // <= replace with your (OS-agnostic) folder path
+    folder = "path/to/file"
     file_list = getFileList(folder);
     number_of_files = file_list.length;
 

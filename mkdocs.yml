@@ -75,7 +75,7 @@ nav:
           - course/pipelines/advanced_segmentation/adding_file_looping.md
           - course/pipelines/advanced_segmentation/saving_and_closing_files.md
   - course/conclusion.md
-  - demo.md
+  #- demo.md
 
 theme:
   name: material

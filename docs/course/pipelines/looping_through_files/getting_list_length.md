@@ -38,7 +38,7 @@ for (i=0; i<number_of_files; i++) {
     is at index 0, the second is at index 1, the third element is at index 2,
     and so on.
 
-    This means that the last element of the list (10) is at index `length -1`,
+    This means that the last element of the list (10) is at index `length-1`,
     or index 9, which is where we want our loop to terminate. :wink:
 
 In the next section, we will replace our "print" function with an "open file"
