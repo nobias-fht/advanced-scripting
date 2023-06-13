@@ -77,7 +77,7 @@ print the path of the file, use `open` to open the file.
     number_of_files = file_list.length;
 
     for (i=0; i<number_of_files; i++) {
-        file_path = folder + File.separator + file_list[0];
+        file_path = folder + File.separator + file_list[i];
         open(file_path);
     }
     ```

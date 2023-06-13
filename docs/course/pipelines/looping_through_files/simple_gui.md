@@ -17,10 +17,10 @@ manually edit the code. :chart_with_downwards_trend:
     number_of_files = file_list.length;
 
     for (i=0; i<number_of_files; i++) {
-        file_path = folder + File.separator + file_list[0];
+        file_path = folder + File.separator + file_list[i];
         open(file_path);
         run("Gaussian Blur...", "sigma=2");
-        save_path = folder + File.separator + "normal_" + i + "_gaussian_blur_sigma2.tif";
+        save_path = folder + File.separator + "processed_" + file_list[i];
         saveAs("Tiff", save_path);
         run("Close");
     }
@@ -58,10 +58,10 @@ same. :thumbs_up:
     number_of_files = file_list.length;
 
     for (i=0; i<number_of_files; i++) {
-        file_path = folder + File.separator + file_list[0];
+        file_path = folder + File.separator + file_list[i];
         open(file_path);
         run("Gaussian Blur...", "sigma=2");
-        save_path = output_folder + File.separator + "normal_" + i + "_gaussian_blur_sigma2.tif";
+        save_path = folder + File.separator + "processed_" + file_list[i];
         saveAs("Tiff", save_path);
         run("Close");
     }

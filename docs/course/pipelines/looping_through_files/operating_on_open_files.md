@@ -19,7 +19,7 @@ sigma.
 Add this file to your script. Think about where in the script this should go,
 and why. :thinking:
 
-??? example "Macro: process files"
+??? example "Macro: Open, Save and Close Files"
 
     ```javascript hl_lines="8"
     folder = "path/to/file";
@@ -27,7 +27,7 @@ and why. :thinking:
     number_of_files = file_list.length;
 
     for (i=0; i<number_of_files; i++){
-      file_path = folder + File.separator + file_list[0];
+      file_path = folder + File.separator + file_list[i];
       open(file_path);
       run("Gaussian Blur...", "sigma=2");
     }

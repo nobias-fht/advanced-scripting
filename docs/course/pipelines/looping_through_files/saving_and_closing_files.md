@@ -39,10 +39,10 @@ the filename relects what we have done to it (something along the lines of
     number_of_files = file_list.length;
 
     for (i=0; i<number_of_files; i++) {
-        file_path = folder + File.separator + file_list[0];
+        file_path = folder + File.separator + file_list[i];
         open(file_path);
         run("Gaussian Blur...", "sigma=2");
-        save_path = folder + File.separator + "normal_" + i + "_gaussian_blur_sigma2.tif";
+        save_path = folder + File.separator + "processed_" + file_list[i];
         saveAs("Tiff", save_path);
     }
     ```
@@ -62,10 +62,10 @@ command to do this and add it to the last line of your macro.
     number_of_files = file_list.length;
 
     for (i=0; i<number_of_files; i++) {
-        file_path = folder + File.separator + file_list[0];
+        file_path = folder + File.separator + file_list[i];
         open(file_path);
         run("Gaussian Blur...", "sigma=2");
-        save_path = folder + File.separator + "normal_" + i + "_gaussian_blur_sigma2.tif";
+        save_path = folder + File.separator + "processed_" + file_list[i];
         saveAs("Tiff", save_path);
         run("Close");
     }
@@ -102,7 +102,7 @@ Take a moment to look through the above code.
         run("Gaussian Blur...", "sigma=2");
 
         // Construct the path to save the file
-        save_path = folder + File.separator + "normal_" + i + "_gaussian_blur_sigma2.tif";
+        save_path = folder + File.separator + "processed_" + file_list[i];
 
         // Save the image
         saveAs("Tiff", save_path);
