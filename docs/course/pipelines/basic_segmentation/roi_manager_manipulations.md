@@ -45,7 +45,7 @@ Now that we can loop through our ROIs, let's rename them.
 
     ```javascript title="Renaming ROIs in the ROI manager"
 
-        name_array = newArray("nuclei", "nuclei_inverted", "bax")
+        name_array = newArray("nuclei", "nuclei_inverted", "bax");
 
         for (i=0; i<roiManager("count"); i++) {
             roiManager("Select", i);
@@ -84,7 +84,7 @@ ROI manager skills!) :nerd:
     run("Create Selection");
     roiManager("Add");
 
-    name_array = newArray("nuclei", "nuclei_inverted", "bax")
+    name_array = newArray("nuclei", "nuclei_inverted", "bax");
     for (i=0; i<roiManager("count"); i++) {
         roiManager("Select", i);
         roiManager("rename", name_array[i]);
