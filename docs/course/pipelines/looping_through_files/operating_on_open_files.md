@@ -19,7 +19,7 @@ sigma.
 Add this file to your script. Think about where in the script this should go,
 and why. :thinking:
 
-??? example "Macro: Open, Save and Close Files"
+??? example "Macro: process files"
 
     ```javascript hl_lines="8"
     folder = "path/to/file";
