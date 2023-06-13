@@ -41,4 +41,4 @@ Are you ready? Let's learn some stuff. :woman_climbing:
 
 !!! Note
     All the scripts are available in
-    [this repository](https://github.com/nobias-fht/advanced-scripting-scripts).
+    [this repository](https://github.com/nobias-fht/advanced-scripting/tree/main/scripts).
