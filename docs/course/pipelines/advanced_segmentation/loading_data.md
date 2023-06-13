@@ -38,7 +38,7 @@ First, we need to get a list of all the open windows. For this we can use the
 following function:
 
 ```javascript title="Listing open windows"
-list = getList("window.titles");
+list = getList("image.titles");
 ```
 
 ??? example "Write code to iterate through this list and rename the windows in the following order: `C1` = nuclei, `C2` = marker_1, `C3` = marker_2. *Hint*: You've seen something similar when we renamed the ROIs in the previous exercise!"
