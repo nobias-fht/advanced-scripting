@@ -26,7 +26,7 @@ works. In our folder, we have 10 files. Let's try just printing the names:
 
 ```javascript
 for (i=0; i<10; i++) {
-  print(file_list[i])
+  print(file_list[i]);
 }
 ```
 
