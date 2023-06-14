@@ -80,7 +80,7 @@ close("*");
 file_list = getFileList(input);
 
 // Loop over each file
-for (j=0; j<file_list.length;; j++) {
+for (j=0; j<file_list.length; j++) {
 
 	// Get file full path
     file_path = input + File.separator + file_list[j];
@@ -113,7 +113,7 @@ for (j=0; j<file_list.length;; j++) {
     roiManager("Save", output + File.separator  + file_list[j] + "_RoiSet.zip");
 
 	// Close everything
-	roiManager("Deselect")
+	roiManager("Deselect");
 	roiManager("Delete");
     close("*");
 }
