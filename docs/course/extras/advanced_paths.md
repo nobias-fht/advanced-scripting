@@ -9,7 +9,7 @@ Path to files are the single most hatred thing in programming. They are
 responsible for a lot of bugs and probably entire blackouts in the US. The
 latter be due to squirrels, but I am sure that paths are involved somehow. :chipmunk:
 
-What is the problem? 
+What is the problem?
 
 Paths are defined differently depending on the operating system. For example,
 the path to the `Documents` folder on Windows is `C:\Users\username\Documents`,

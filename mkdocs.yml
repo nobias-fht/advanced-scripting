@@ -25,7 +25,6 @@ nav:
       - course/macro_recorder/recording.md
       - course/macro_recorder/loading_images.md
       - course/macro_recorder/splitting_channels.md
-      - course/macro_recorder/thresholding.md
   - Advanced Macro:
       - course/advanced_scripting/index.md
       - course/advanced_scripting/advanced_paths.md
@@ -75,6 +74,10 @@ nav:
           - course/pipelines/advanced_segmentation/adding_file_looping.md
           - course/pipelines/advanced_segmentation/saving_and_closing_files.md
   - course/conclusion.md
+  - Extras:
+      - course/extras/index.md
+      - course/extras/advanced_paths.md
+      - course/extras/advanced_paths_exercises.md
   #- demo.md
 
 theme:
