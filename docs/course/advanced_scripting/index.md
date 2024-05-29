@@ -9,7 +9,6 @@ or methods to help writing beautiful and useful macros. :sunglasses:
 
 !!! info "Learning Objectives"
 
-    * Writing OS-independent paths
     * Writing functions
     * Documenting code
     * Making user interfaces
