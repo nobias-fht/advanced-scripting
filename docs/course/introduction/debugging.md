@@ -3,12 +3,12 @@ tags:
   - exercises
   - debugging
 ---
-# Debugging exercise
+# Debugging demo
 
 Debugging is the process of spending hours finding a typo that can be
 corrected in 0.1 s. Annoying, but unavoidable. :bug:
 
-Better be prepared then! :muscle:
+Let's do it together! :muscle:
 
 !!!Question
     Find the errors in the following macro and correct them:

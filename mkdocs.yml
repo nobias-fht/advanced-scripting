@@ -15,8 +15,8 @@ nav:
       - course/introduction/arrays_exercises.md
       - course/introduction/strings.md
       - course/introduction/strings_exercises.md
-      - course/introduction/loops.md
-      - course/introduction/loops_exercises.md
+      - course/introduction/for_loops.md
+      - course/introduction/for_loops_exercises.md
       - course/introduction/conditionals.md
       - course/introduction/conditionals_exercises.md
       - course/introduction/debugging.md

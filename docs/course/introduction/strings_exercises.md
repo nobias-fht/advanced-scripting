@@ -19,7 +19,8 @@ tags:
     Can you do it without hard-coding the number `8463` and its position
     in the string?
 
-    *Hint*: the final value should look like `my_new_file.tif`
+    *Hint*: the final value should look like `my_new_file.tif`, you can split the
+    strings as previously shown and join them together using the `+` operator.
 
 !!! question
     There are tons of useful functions to manipulate strings. Can you tell what

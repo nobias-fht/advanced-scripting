@@ -3,7 +3,7 @@ tags:
   - coding
   - loops
 ---
-# Loops
+# For loops
 
 `Loops` are a way of telling the computer that we would like to perform an
 operation more than once. Let's take a look at how we write a loop in
@@ -11,8 +11,6 @@ operation more than once. Let's take a look at how we write a loop in
 powerful, and will be essential for `ImageJ Macro` programming. So much of automated image analysis is telling the computer "Repeat this tedious task 500 times so that I don't have to" :fire:
 
 Let's dive in! :diving_mask:
-
-### For Loops
 
 ```java title="For Loops"
 
@@ -46,33 +44,3 @@ condition where `i` is equal to 10. In this case, the check of the second
 parameter of the loop `i<10` will fail, and the loop will exit.
 
 Try changing some of the values in the loop and see what happens. :rocket:
-
-### While loops
-
-Another type of loop is the `while` loop. The general form is the following:
-
-```java title="While Loops"
-
-while (condition){
-    //do something
-}
-```
-
-This can be very useful to continue executing a block of code until a condition
-is met. For example, we could continue eroding a binary image until there are no
-objects greater than 1000 pixels in size, for example.
-
-A simpler example would be the following:
-
-```java title="A simple while loop"
-num = 10
-while (num > 0){
-    print(num);
-    num--; // (1)!
-}
-```
-
-1. This is the same as the num++ operator, just in reverse
-
-Here, we are going to reduce the value of `num` by 1 until it reaches 0 by
-continuing the loop until the `while (num > 0)` check fails.

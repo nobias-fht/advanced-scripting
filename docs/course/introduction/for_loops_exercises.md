@@ -3,12 +3,12 @@ tags:
   - exercises
   - loops
 ---
-# Loop exercises
+# For loop exercises
 
 !!! question
     What is the problem with the following loops:
 
-    ```javascript title="Some problematic loops"
+    ```javascript title="A problematic loop"
     for (i=0; i>10; i++){
         print(i);
     }
@@ -17,19 +17,6 @@ tags:
     ```javascript title="Another problematic loop"
     for (i=0; i<10; i--){
         print(i);
-    }
-    ```
-
-    And in this code snippet:
-
-    ```javascript title="Some more problematic loops"
-    for (i=0; i<5; i++){
-        print(i);
-    }
-
-    j = 0;
-    while (i<10){
-        j += 2;
     }
     ```
 

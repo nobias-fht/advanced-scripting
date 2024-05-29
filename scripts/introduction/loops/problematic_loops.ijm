@@ -21,16 +21,3 @@ for (i=0; i>10; i++){
 for (i=0; i<10; i--){
 	print(i);
 }
-
-// Problem: the variable i has value 4 at the end of
-// the first loop, the while loop runs on the condition
-// that i<10 but increases j
-// Solution: use j<10 rather than i<10
-for (i=0; i<5; i++){
-	print(i);
-}
-
-j = 0;
-while (i<10){
-	j += 2;
-}
