@@ -10,7 +10,7 @@ tags:
 
     ```javascript title="Skeleton"
     #@ Type (label="Label") name
-    #@output String myString
+    #@ output String myString
 
     myString = ;
     ```
