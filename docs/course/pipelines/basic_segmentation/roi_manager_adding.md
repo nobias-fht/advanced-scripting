@@ -36,7 +36,7 @@ better way is a key part of softwae development.
     selectWindow("bax");
     run("Duplicate...", "title=bax_thresholded");
     run("Auto Threshold", "method=Default white");
-    selectWindow('nuclei_thresholded');
+    selectWindow("nuclei_thresholded");
     run("Create Selection");
     selectWindow("bax_thresholded");
     run("Restore Selection");
@@ -64,12 +64,12 @@ better way is a key part of softwae development.
     selectWindow("bax");
     run("Duplicate...", "title=bax_thresholded");
     run("Auto Threshold", "method=Default white");
-    selectWindow('nuclei_thresholded');
+    selectWindow("nuclei_thresholded");
     run("Create Selection");
     roiManager("Add");
     run("Make Inverse");
     roiManager("Add");
-    selectWindow('bax_thresholded');
+    selectWindow("bax_thresholded");
     run("Create Selection");
     roiManager("Add");
     ```

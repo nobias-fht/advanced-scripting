@@ -28,7 +28,7 @@ First, we need to convert our thresholded image to an ROI. :thinking:
     selectWindow("bax");
     run("Duplicate...", "title=bax_thresholded");
     run("Auto Threshold", "method=Default white");
-    selectWindow('nuclei_thresholded');
+    selectWindow("nuclei_thresholded");
     run("Create Selection");
     selectWindow("bax_thresholded");
     run("Restore Selection");
@@ -62,13 +62,13 @@ measure the *integrated density* of the ROI of the thresholded bax image.
     selectWindow("bax");
     run("Duplicate...", "title=bax_thresholded");
     run("Auto Threshold", "method=Default white");
-    selectWindow('nuclei_thresholded');
+    selectWindow("nuclei_thresholded");
     run("Create Selection");
     selectWindow("bax_thresholded");
     run("Restore Selection");
     run("Measure");
-    getResult("IntDen", 0);
-    print("the number of bax-positive pixels inside the nuclei is " + int_den / 255);
+    int_den_inside = getResult("IntDen", 0);
+    print("the number of bax-positive pixels inside the nuclei is " + int_den_inside / 255);
     ```
 
 From this, we can see that the number of bax-positive pixels (~area) is 12,984. :tada:
@@ -88,7 +88,7 @@ From this, we can see that the number of bax-positive pixels (~area) is 12,984. 
     selectWindow("bax");
     run("Duplicate...", "title=bax_thresholded");
     run("Auto Threshold", "method=Default white");
-    selectWindow('nuclei_thresholded');
+    selectWindow("nuclei_thresholded");
     run("Create Selection");
     selectWindow("bax_thresholded");
     run("Restore Selection");

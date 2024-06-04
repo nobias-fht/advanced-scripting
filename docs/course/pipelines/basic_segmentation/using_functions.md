@@ -21,9 +21,12 @@ difference being which indices we select.
 
 ??? example "Write a function that performs this job, and replace your code with calls to this function"
 
-    ```javascript hl_lines="1 2 3 4 5 35 36 37"
+    ```javascript hl_lines="1 2 3 4 5 6 7 8 35 36 37"
     function measureIntersect(roi_1, roi_2) {
-        roiManager("Select", indexArray(RoiManager.getIndex(roi_1),RoiManager.getIndex(roi_2)));
+        // Create an array with the two rois
+        rois = newArray(RoiManager.getIndex(roi_1), RoiManager.getIndex(roi_2));
+
+        roiManager("Select", rois);
         roiManager("AND");
         run("Measure");
     }
@@ -40,12 +43,12 @@ difference being which indices we select.
     selectWindow("bax");
     run("Duplicate...", "title=bax_thresholded");
     run("Auto Threshold", "method=Default white");
-    selectWindow('nuclei_thresholded');
+    selectWindow("nuclei_thresholded");
     run("Create Selection");
     roiManager("Add");
     run("Make Inverse");
     roiManager("Add");
-    selectWindow('bax_thresholded');
+    selectWindow("bax_thresholded");
     run("Create Selection");
     roiManager("Add");
 

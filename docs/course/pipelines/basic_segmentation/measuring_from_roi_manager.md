@@ -50,7 +50,7 @@ Let's include that in our code! :wrench:
     selectWindow("bax");
     run("Duplicate...", "title=bax_thresholded");
     run("Auto Threshold", "method=Default white");
-    selectWindow('nuclei_thresholded');
+    selectWindow("nuclei_thresholded");
     run("Create Selection");
     roiManager("Add");
     run("Make Inverse");
@@ -95,12 +95,12 @@ Measurements" window in ImageJ.
     selectWindow("bax");
     run("Duplicate...", "title=bax_thresholded");
     run("Auto Threshold", "method=Default white");
-    selectWindow('nuclei_thresholded');
+    selectWindow("nuclei_thresholded");
     run("Create Selection");
     roiManager("Add");
     run("Make Inverse");
     roiManager("Add");
-    selectWindow('bax_thresholded');
+    selectWindow("bax_thresholded");
     run("Create Selection");
     roiManager("Add");
 
@@ -140,12 +140,12 @@ easily compare them. :floppy_disk:
     selectWindow("bax");
     run("Duplicate...", "title=bax_thresholded");
     run("Auto Threshold", "method=Default white");
-    selectWindow('nuclei_thresholded');
+    selectWindow("nuclei_thresholded");
     run("Create Selection");
     roiManager("Add");
     run("Make Inverse");
     roiManager("Add");
-    selectWindow('bax_thresholded');
+    selectWindow("bax_thresholded");
     run("Create Selection");
     roiManager("Add");
 

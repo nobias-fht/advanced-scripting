@@ -28,7 +28,7 @@ stop:
 
 ```javascript
 for (i=0; i<number_of_files; i++) {
-  print(file_list[i])
+  print(file_list[i]);
 }
 ```
 

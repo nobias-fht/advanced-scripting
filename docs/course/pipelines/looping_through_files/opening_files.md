@@ -47,7 +47,7 @@ open("path/to/file");
 
 What should we put for "path/to/file"? This is the `path` of a file, which is
 like an address to where the file lives on the computer. In this case we know
-the path of our files is `path/to/tile`. We need to pass in as an argument to
+the path of our files is `path/to/file`. We need to pass in as an argument to
 the `open` function a concatenation of this path (a string) and the file name
 (another string).
 
