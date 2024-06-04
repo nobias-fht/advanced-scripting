@@ -74,6 +74,7 @@ when the maximum label value is reached)? :thinking:
     run("Area Opening", "pixel=50");
     run("Connected Components Labeling", "connectivity=4 type=[8 bits]");
     run("Set Measurements...", "min redirect=None decimal=3");
+    run("Measure");
     max_value = getResults("Max"); //(1)!
     for (i=1; i<=max_value; i++) {
         labelToROI(i);
