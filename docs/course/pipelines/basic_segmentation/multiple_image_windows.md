@@ -17,9 +17,11 @@ First, we need to split the channels. :scissors:
 ??? example "Make a macro that opens the raw image and splits the two channels"
 
     ```javascript
-    open("path/overlay.tif");
+    open("path/bax_DAPI_overlay.tif"); // (1)!
     run("Split Channels");
     ```
+
+    1. Replace `path/bax_DAPI_overlay.tif` with the path to the image.
 
 Now we have two files. Unfortunately, they are not named very intuitively.
 Let's fix that. :wrench:

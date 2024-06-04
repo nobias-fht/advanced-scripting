@@ -27,8 +27,6 @@ nav:
       - course/macro_recorder/splitting_channels.md
   - Advanced Macro:
       - course/advanced_scripting/index.md
-      - course/advanced_scripting/advanced_paths.md
-      - course/advanced_scripting/advanced_paths_exercises.md
       - course/advanced_scripting/functions.md
       - course/advanced_scripting/functions_exercises.md
       - course/advanced_scripting/documenting.md
@@ -71,12 +69,12 @@ nav:
       - course/extras/advanced_paths.md
       - course/extras/advanced_paths_exercises.md
       - Simple Object Tracking:
-          - course/pipelines/simple_object_tracking/index.md
-          - course/pipelines/simple_object_tracking/navigating_image_stacks.md
-          - course/pipelines/simple_object_tracking/getting_mouse_xy_position.md
-          - course/pipelines/simple_object_tracking/measure_position_over_time.md
-          - course/pipelines/simple_object_tracking/writing_to_file.md
-          - course/pipelines/simple_object_tracking/append_file.md
+          - course/extras/simple_object_tracking/index.md
+          - course/extras/simple_object_tracking/navigating_image_stacks.md
+          - course/extras/simple_object_tracking/getting_mouse_xy_position.md
+          - course/extras/simple_object_tracking/measure_position_over_time.md
+          - course/extras/simple_object_tracking/writing_to_file.md
+          - course/extras/simple_object_tracking/append_file.md
   #- demo.md
 
 theme:
