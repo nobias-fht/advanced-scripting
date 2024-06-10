@@ -35,7 +35,8 @@ Are you ready? Let's learn some stuff. :woman_climbing:
     foremost, know where to find answers:
 
     - [Introduction to Macro programming](https://imagej.net/scripting/macro)
-    - [Macro language documentation](https://imagej.nih.gov/ij/developer/macro/macros.html)
+    - [Macro language documentation](https://imagej.net/ij/developer/macro/macros.html)
+    - [Huge list of all build-in functions](https://wsr.imagej.net/developer/macro/functions.html)
     - [Image.sc forum](https://image.sc)
     - [A great cheat sheet](https://www.biodip.de/w/images/0/00/ImageJ_macro_cheatsheet.pdf)
 
