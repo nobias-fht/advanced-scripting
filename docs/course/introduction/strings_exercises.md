@@ -13,16 +13,6 @@ tags:
     character `i` instead of the `.`?
 
 !!! question
-    Write code to remove the numeric value from the string
-    `my_new_8463_file.tif`.
-
-    Can you do it without hard-coding the number `8463` and its position
-    in the string?
-
-    *Hint*: the final value should look like `my_new_file.tif`, you can split the
-    strings as previously shown and join them together using the `+` operator.
-
-!!! question
     There are tons of useful functions to manipulate strings. Can you tell what
     the following functions do?
 
@@ -46,3 +36,13 @@ tags:
     Answer: In computer programming, a value of `1` is often used to signify `True` and
     a value of `0` to signify `False`. In these cases, the computer is just
     telling us whether the question we asked it is `True` or `False`.
+
+!!! question
+    Write code to remove the numeric value from the string
+    `my_new_8463_file.tif`.
+
+    Can you do it without hard-coding the number `8463` and its position
+    in the string?
+
+    *Hint*: the final value should look like `my_new_file.tif`, you can split the
+    strings as previously shown and join them together using the `+` operator.
