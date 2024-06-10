@@ -11,7 +11,7 @@ tags:
 
 !!! question
 
-    Write a function that takes an array, loops over the indices, adds multiplies
+    Write a function that takes an array, loops over the indices, multiplies
     together all array values and returns the result.
 
 !!! question
