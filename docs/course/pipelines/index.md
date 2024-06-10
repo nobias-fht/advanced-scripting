@@ -12,7 +12,6 @@ actually do something. So let's put on our Bioimage Analyst hats! :tophat:
     We will try to build four pipelines:
 
     * Looping through files :loop:
-    * Performing simple tracking :footprints:
     * Basic segmentation :collision:
     * Advanced segmentation :rocket:
 

@@ -13,7 +13,7 @@ small treasure hunt to see what you are really worth! :pirate_flag:
 !!! Note
     Here are the best friends of a stranded sailor:
 
-    - [ImageJ macro documentation](https://imagej.nih.gov/ij/developer/macro/macros.html) :anchor:
+    - [ImageJ macro documentation](https://imagej.net/ij/developer/macro/macros.html) :anchor:
     - [Built-in macro functions](https://wsr.imagej.net/developer/macro/functions.html) :wrapped_gift:
     - [Image.sc forum](https://forum.image.sc) :light_bulb:
 
