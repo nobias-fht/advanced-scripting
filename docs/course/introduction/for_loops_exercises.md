@@ -23,7 +23,7 @@ tags:
     :warning: If you run them, you might have to kill your Fiji session.
 
 !!! question
-    Can you write a for loop that runs 20 times? And a while loop?
+    Can you write a for loop that runs 20 times?
 
 !!! question
     How could we count from 0 to 100, but in increments of 5?
