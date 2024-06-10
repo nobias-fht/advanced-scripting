@@ -8,10 +8,12 @@ tags:
 # Variable exercises
 
 !!!Question
+
         What happens when you use mathematical operations on strings? Try some
         and find out!
 
 !!!Question
+
         If you have the following variables:
 
         ```javascript title="Variable values"
