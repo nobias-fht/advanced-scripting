@@ -18,7 +18,7 @@ the same time, using the ROI manager. :rocket:
 
 The ROI manager has a lot of useful macro commands attached to it, which can be
 found in the "built in macro functions" section of the
-[ImageJ docs](https://imagej.nih.gov/ij/developer/macro/functions.html). Let's
+[ImageJ docs](https://wsr.imagej.net/developer/macro/functions.html). Let's
 delete all of the code highlighted below from our macro. Dont worry! We're going
 to replace it with something better. Deleting old code and re-writing it in a
 better way is a key part of softwae development.

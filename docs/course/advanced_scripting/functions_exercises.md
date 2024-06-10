@@ -5,18 +5,18 @@ tags:
 ---
 # Functions exercises
 
-!!!Question
+!!! question
     Write a function that takes two parameters, adds them together, and returns
     the result.
 
-!!!Question
+!!! question
+
     Write a function that takes an array, loops over the indices, adds multiplies
     together all array values and returns the result.
 
-!!!Question
-    Write a function ...
+!!! question
+    :warning: Advanced exercise :warning:
 
-!!!Question title=":warning: Advanced :warning:"
     Run the following macro and write down the final result. Then refactor the
     code into one or several functions to avoid code duplication.
 
