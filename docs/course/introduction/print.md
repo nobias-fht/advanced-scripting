@@ -38,6 +38,10 @@ you can go ahead and do what we told you to do". In the ImageJ macro language,
 we do this by placing the `;` symbol at the end of the line. This is very
 important, and in fact, if you forget to do this, your code will fail.
 
+Ok, but here it doesn't fail? Well, depending on the instructions that you ran, it
+might not have mattered. But 99% of the errors you will get when writting your macro
+is going to be because of a missing `;` at the end of some line.
+
 !!! note "Don't Panic!"
     Don't worry about typing the wrong thing and making an error. The worst
     case-scenario is that you will have to force your script to stop running.
