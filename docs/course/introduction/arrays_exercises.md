@@ -19,10 +19,10 @@ tags:
     `Array.getSequence()` does.
 
 !!!Question
-        It is a bit cumbersome to print an array element by element. Can't we
-        print the whole array directly? Try using `Array.print()` rather than
-        simply `print()`.
+    It is a bit cumbersome to print an array element by element. Can't we
+    print the whole array directly? Try using `Array.print()` rather than
+    simply `print()`.
 
 !!!Question
-        Try initializing some arrays of various types. Can you mix types in
-        an array?
+    Try initializing some arrays of various types. Can you mix types in
+    an array?
