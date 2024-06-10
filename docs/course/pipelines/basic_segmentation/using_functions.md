@@ -21,13 +21,14 @@ difference being which indices we select.
 
 ??? example "Write a function that performs this job, and replace your code with calls to this function"
 
-    ```javascript hl_lines="1 2 3 4 5 6 7 8 35 36 37"
+    ```javascript hl_lines="1 2 3 4 5 6 7 8 9 35 36 37"
     function measureIntersect(roi_1, roi_2) {
         // Create an array with the two rois
         rois = newArray(RoiManager.getIndex(roi_1), RoiManager.getIndex(roi_2));
 
         roiManager("Select", rois);
         roiManager("AND");
+        run("Set Measurements...", "area mean standard integrated redirect=None decimal=3");
         run("Measure");
     }
 

@@ -49,7 +49,7 @@ measure the *integrated density* of the ROI of the thresholded bax image.
 
 ??? example "Add code to calculate the number of non-zero pixels, using integrated density. *Hint*: You will have to access the measured value in the results table. How could we do this?"
 
-    ```javascript hl_lines="17 18 19"
+    ```javascript hl_lines="16 17 18 19"
     open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
@@ -66,6 +66,7 @@ measure the *integrated density* of the ROI of the thresholded bax image.
     run("Create Selection");
     selectWindow("bax_thresholded");
     run("Restore Selection");
+    run("Set Measurements...", "area mean standard integrated redirect=None decimal=3");
     run("Measure");
     int_den_inside = getResult("IntDen", 0);
     print("the number of bax-positive pixels inside the nuclei is " + int_den_inside / 255);
@@ -75,7 +76,7 @@ From this, we can see that the number of bax-positive pixels (~area) is 12,984. 
 
 ??? example "Use the same approach to calculate the area outside the nuclei. How could we measure everything EXCEPT what is in the nuclei? (there are at least three different ways of doing this!)"
 
-    ```javascript hl_lines="20 21 22 23"
+    ```javascript hl_lines="21 22 23 24"
     open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
@@ -92,6 +93,7 @@ From this, we can see that the number of bax-positive pixels (~area) is 12,984. 
     run("Create Selection");
     selectWindow("bax_thresholded");
     run("Restore Selection");
+    run("Set Measurements...", "area mean standard integrated redirect=None decimal=3");
     run("Measure");
     int_den_inside = getResult("IntDen", 0);
     print("the number of bax-positive pixels inside the nuclei is " + int_den_inside / 255);

@@ -37,7 +37,7 @@ Let's include that in our code! :wrench:
 
 ??? example "Add lines to your macro to select the `nuclei` and `bax` ROIs from the ROI manager, and perform the addition and measurement"
 
-    ```javascript hl_lines="28 29 30 31"
+    ```javascript hl_lines="28 29 30 31 32"
     open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
@@ -68,6 +68,7 @@ Let's include that in our code! :wrench:
     selectWindow("bax");
     roiManager("Select", newArray(0,2));
     roiManager("AND");
+    run("Set Measurements...", "area mean standard integrated redirect=None decimal=3");
     run("Measure");
     ```
 
@@ -113,6 +114,7 @@ Measurements" window in ImageJ.
     selectWindow("bax");
     roiManager("Select", newArray(0,2));
     roiManager("AND");
+    run("Set Measurements...", "area mean standard integrated redirect=None decimal=3");
     run("Measure");
     selectWindow("bax");
     roiManager("Select", newArray(1,2));
@@ -158,6 +160,7 @@ easily compare them. :floppy_disk:
     selectWindow("bax");
     roiManager("Select", newArray(RoiManager.getIndex("nuclei"),RoiManager.getIndex("bax")));
     roiManager("AND");
+    run("Set Measurements...", "area mean standard integrated redirect=None decimal=3");
     run("Measure");
     selectWindow("bax");
     roiManager("Select", newArray(RoiManager.getIndex("nuclei_inverted"),RoiManager.getIndex("bax")));

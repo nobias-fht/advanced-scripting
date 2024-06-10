@@ -21,9 +21,9 @@ found in the "built in macro functions" section of the
 [ImageJ docs](https://wsr.imagej.net/developer/macro/functions.html). Let's
 delete all of the code highlighted below from our macro. Dont worry! We're going
 to replace it with something better. Deleting old code and re-writing it in a
-better way is a key part of softwae development.
+better way is a key part of software development.
 
-```javascript hl_lines="15 16 17 18 19 20 21 22 23"
+```javascript hl_lines="14 15 16 17 18 19 20 21 22 23"
     open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
@@ -40,6 +40,7 @@ better way is a key part of softwae development.
     run("Create Selection");
     selectWindow("bax_thresholded");
     run("Restore Selection");
+    run("Set Measurements...", "area mean standard integrated redirect=None decimal=3");
     run("Measure");
     int_den_inside = getResult("IntDen", 0);
     print("the number of bax-positive pixels inside the nuclei is " + int_den_inside / 255);

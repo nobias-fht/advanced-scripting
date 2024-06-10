@@ -45,12 +45,23 @@ statements:
 
 ```javascript title="Comparison operators"
 number = 42;
-smaller_than = number < 50;
-smaller_or_equal = number <= 50;
-greater_than = number > 50;
-greater_or_equal = number >= 50;
-equal = number == 50;
-not_equal = number != 50;
+//smaller_than
+number < 50;
+
+//smaller_or_equal
+number <= 50;
+
+//greater_than
+number > 50;
+
+//greater_or_equal
+number >= 50;
+
+//equal
+number == 50;
+
+//not_equal
+number != 50;
 ```
 
 These operators are empowering as they allow fine control when used with an
