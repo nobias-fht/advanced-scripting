@@ -5,8 +5,7 @@ tags:
 # ImageJ Macros
 
 !!!Question
-    What is a "macro"? According to the
-    [official guide](https://imagej.nih.gov/ij/developer/macro/macros.html):
+    What is a "macro"? According to the official guide:
 
     "A macro is a simple program that automates a series of ImageJ commands."
     :robot:
