@@ -9,7 +9,7 @@ so far was intended to give you some basics. But the best way to learn is to
 actually do something. So let's put on our Bioimage Analyst hats! :tophat:
 
 !!! info "Aim"
-    We will try to build four pipelines:
+    We will try to build three pipelines:
 
     * Looping through files :loop:
     * Basic segmentation :collision:
