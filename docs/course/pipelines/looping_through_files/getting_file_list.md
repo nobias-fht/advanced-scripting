@@ -13,9 +13,6 @@ folder = "path/to/file";
 file_list = getFileList(folder);
 ```
 
-1. Try to write the `folder` variable using the `getDirectory` method and the
-`File.separator` variable.
-
 !!!Important
     The function `getFileList` is not that well named, since it actually
     returns...
