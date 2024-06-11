@@ -8,7 +8,7 @@ tags:
 We have a two-channel image, and we would like to perform some quantification on
 these images. Let's say we're interested in two things:
 
-* What is the area of the *bax* staining is inside and outside the nucleus
+* What area of the *bax* staining is inside and outside the nucleus
 * Whether the average intensity of the staining inside the nucleus is higher
 than the intensity outside the nucleus
 
