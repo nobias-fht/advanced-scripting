@@ -61,7 +61,7 @@ same. :thumbs_up:
         file_path = folder + File.separator + file_list[i];
         open(file_path);
         run("Gaussian Blur...", "sigma=2");
-        save_path = folder + File.separator + "processed_" + file_list[i];
+        save_path = output_folder + File.separator + "processed_" + file_list[i];
         saveAs("Tiff", save_path);
         run("Close");
     }

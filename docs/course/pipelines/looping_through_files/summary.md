@@ -27,7 +27,7 @@ for (i = 0; i < file_list.length; i++) {
 
     // do some image processing here :)
 
-    save_path = save_folder + "processed_" + file_list[i];
+    save_path = output_folder + "processed_" + file_list[i];
     saveAs("Tiff", save_path);
     run("Close");
 }
