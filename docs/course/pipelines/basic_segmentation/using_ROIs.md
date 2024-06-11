@@ -76,7 +76,7 @@ From this, we can see that the number of bax-positive pixels (~area) is 12,984. 
 
 ??? example "Use the same approach to calculate the area outside the nuclei. How could we measure everything EXCEPT what is in the nuclei? (there are at least three different ways of doing this!)"
 
-    ```javascript hl_lines="21 22 23 24"
+    ```javascript hl_lines="21 22 23 24 25"
     open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
