@@ -49,7 +49,7 @@ measure the *integrated density* of the ROI of the thresholded bax image.
 
 ??? example "Add code to calculate the number of non-zero pixels, using integrated density. *Hint*: You will have to access the measured value in the results table. How could we do this?"
 
-    ```javascript hl_lines="16 17 18 19"
+    ```javascript hl_lines="16 17 18 19 20"
     open("path/to/file/bax_DAPI_overlay.tif");
     run("Split Channels");
     selectWindow("C1-bax_DAPI_overlay.tif");
