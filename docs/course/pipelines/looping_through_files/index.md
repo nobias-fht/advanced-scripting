@@ -22,5 +22,5 @@ The purpose of this tutorial is to apply a simple filter to each of these files.
     demonstrate here. For example, we could use the Fiji batch processing
     interface. Or, we could open all the images and iterate through all the
     open windows. However this method, while a little more complicated, is more
-    flexible and will be of more use down the road a we build more complicated
+    flexible and will be of more use down the road as we build more complicated
     pipelines.
